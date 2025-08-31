@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degen States Welfare Assistance Program - Official Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for an official look -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary-blue: #003366; /* Deep Navy Blue */
+            --color-secondary-blue: #0056B3; /* Standard Blue */
+            --color-light-blue: #E0F2F7; /* Very Light Blue */
+            --color-white: #FFFFFF;
+            --color-gray-text: #333333;
+            --color-light-gray: #F0F0F0;
+            --color-border-gray: #CCCCCC;
+            --color-red-accent: #CC0000; /* Red line from inspiration */
+        }
+
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: var(--color-light-gray);
+            color: var(--color-gray-text);
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+
+        /* Top Government Bar Styling */
+        .top-gov-bar {
+            background-color: var(--color-primary-blue);
+            color: var(--color-white);
+        }
+
+        /* Header Specific Styling */
+        .header-top {
+            background-color: #f8f8f8; /* Lighter background for secondary bar */
+            color: var(--color-gray-text);
+            border-bottom: 1px solid var(--color-border-gray);
+        }
+        .header-main {
+            background-color: var(--color-white);
+            border-bottom: 1px solid var(--color-border-gray);
+        }
+        .header-nav {
+            background-color: var(--color-secondary-blue);
+            color: var(--color-white);
+        }
+
+        /* Card Styling for Grid and Most Popular */
+        .info-card {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-border-gray);
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease-in-out;
+            color: var(--color-primary-blue); /* Default text color for info cards */
+        }
+        .info-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-color: var(--color-secondary-blue);
+            transform: translateY(-3px); /* Subtle lift effect on hover */
+        }
+        .info-card h3 {
+            color: var(--color-primary-blue); /* Ensure heading is navy blue */
+        }
+        .info-card p {
+            color: var(--color-primary-blue); /* Ensure paragraph text is navy blue */
+        }
+
+        .most-popular-card {
+            background-color: var(--color-primary-blue); /* Keep this navy blue */
+            color: var(--color-white);
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .most-popular-card a {
+            color: var(--color-light-blue);
+            text-decoration: underline;
+        }
+        .most-popular-card a:hover {
+            color: var(--color-white);
+        }
+
+        /* Styling for detailed sections */
+        .detailed-section h2, .detailed-section h3, .detailed-section p, .detailed-section li {
+            color: var(--color-primary-blue);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- New Top Government Bar with Seal and Official Name -->
+    <div class="top-gov-bar py-3 px-4 flex items-center justify-center md:justify-start">
+        <img src="https://github.com/E-MO36/miles-for-mango/blob/main/DegenGov.png?raw=true" alt="Official Government Seal" class="h-10 w-10 md:h-12 md:w-12 mr-3 shadow-md rounded-md">
+        <span class="text-lg md:text-xl font-bold" data-key="programName">Degen States Welfare Assistance Program</span>
+    </div>
+
+    <!-- Header Section -->
+    <header class="w-full">
+        <!-- Top Bar with Language and Search -->
+        <div class="header-top py-2 px-4 text-sm flex flex-col sm:flex-row justify-between items-center">
+            <div class="mb-2 sm:mb-0">
+                <a href="#" class="text-gray-700 hover:text-blue-700 hover:underline mr-4" id="lang-english">English</a>
+                <a href="#" class="text-gray-700 hover:text-blue-700 hover:underline mr-4" id="lang-spanish">Español</a>
+                <a href="#" class="text-gray-700 hover:text-blue-700 hover:underline" id="lang-degen">Degen</a>
+            </div>
+            <div class="relative w-full sm:w-auto">
+                <input type="text" placeholder="Search WAP.gov..." class="py-1 pl-3 pr-10 text-sm rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-300 w-full sm:w-64">
+                <button class="absolute right-0 top-0 h-full w-10 bg-blue-500 hover:bg-blue-600 text-white rounded-r flex items-center justify-center">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Header with Logo and Navigation -->
+        <div class="header-main py-4 px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <!-- WAP Coin Logo -->
+                <img src="https://github.com/E-MO36/miles-for-mango/blob/main/logo.jpg?raw=true" alt="$WAP Coin Logo" class="h-10 w-10 mr-2 shadow-md border border-gray-300">
+                <span class="text-xl font-bold text-gray-800" data-key="officialPortal">WAP.gov - Official Portal</span>
+            </div>
+            <nav class="w-full md:w-auto mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-gray-700 font-medium text-center md:text-left">
+                    <li><a href="#about" class="hover:text-blue-700 block py-1" data-key="navAbout">$WAP</a></li>
+                    <li><a href="#tokenomics" class="hover:text-blue-700 block py-1" data-key="navTokenomics">Tokenomics</a></li>
+                    <li><a href="#how-to-buy" class="hover:text-blue-700 block py-1" data-key="navHowToBuy">How to Buy</a></li>
+                    <li><a href="#roadmap" class="hover:text-blue-700 block py-1" data-key="navRoadmap">Roadmap</a></li>
+                    <li><a href="#community" class="hover:text-blue-700 block py-1" data-key="navCommunity">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Breadcrumbs -->
+        <div class="px-4 py-2 bg-gray-100 text-sm text-gray-600">
+            <nav class="container mx-auto">
+                <span data-key="home">Home</span> &gt; <span data-key="wapBenefits">WAP Benefits</span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Red Banner -->
+    <div class="w-full h-2 bg-red-600"></div>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-primary-blue mb-8 text-center md:text-left" data-key="mainTitle">Welfare Assistance Program</h1>
+
+        <!-- Hero Section with "Most Popular" card, description, and DegenGov logo -->
+        <section class="relative rounded-lg shadow-lg overflow-hidden mb-12 bg-white" style="min-height: 250px;">
+            <div class="relative p-6 flex flex-col md:flex-row items-center justify-between">
+                <!-- "Most Popular" Card -->
+                <div class="most-popular-card p-6 md:w-1/3 mb-6 md:mb-0 md:mr-6">
+                    <h2 class="text-2xl font-bold mb-4" data-key="mostPopularTitle">Most Popular</h2>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><a href="#about" class="hover:text-white" data-key="mostPopularVision">Learn about $WAP's Vision</a></li>
+                        <li><a href="#tokenomics" class="hover:text-white" data-key="mostPopularTokenomics">Get information on $WAP Tokenomics</a></li>
+                        <li><a href="#lottery" class="hover:text-white" data-key="mostPopularLottery">Find out about "Welfare Checks" Lottery</a></li>
+                    </ul>
+                </div>
+                <!-- Main description AND DegenGov logo -->
+                <div class="md:w-2/3 text-primary-blue text-base leading-relaxed flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                    <!-- Description text -->
+                    <div class="md:w-1/2 text-sm">
+                        <p class="mb-2" data-key="heroDesc1">Get information on the $WAP Welfare Assistance Program, designed to provide support and good times through our unique decentralized benefits system.</p>
+                        <p data-key="heroDesc2">The $WAP initiative aims to create a community-driven ecosystem where participants can receive regular "welfare checks" in Solana, funded by transaction fees.</p>
+                    </div>
+                    <!-- DegenGov Logo Image -->
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="https://github.com/E-MO36/miles-for-mango/blob/main/DegenGov.png?raw=true" alt="DegenGov Logo" class="max-w-full h-auto max-h-48 object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Powerball Tracker Section -->
+        <section class="bg-cover bg-center text-white py-8 px-4 text-center rounded-lg shadow-lg mb-12" style="background-image: url('https://github.com/E-MO36/miles-for-mango/blob/main/PowerballBackground.png?raw=true');">
+            <h2 class="text-3xl font-bold mb-4" data-key="trackerTitle">Hourly Powerball Tracker</h2>
+            <p class="text-6xl font-extrabold mb-2 text-yellow-300" id="powerball-tracker-value">$0.00 SOL</p>
+            <p class="text-lg font-medium" data-key="trackerInfo">Current estimated reward per winner, based on 3% transaction tax (90% to holders) and 50 winners per hour.</p>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="bg-white text-primary-blue py-8 px-4 text-center rounded-lg shadow-lg mb-12">
+            <h2 class="text-2xl font-bold mb-4" data-key="socialMediaTitle">Follow Us on Social Media</h2>
+            <div class="flex flex-wrap justify-center items-center space-x-6 text-lg">
+                <div class="mb-2 md:mb-0">
+                    <a href="https://t.me/+rO3Citn46Xk3YWQx" target="_blank" class="hover:underline flex items-center justify-center text-primary-blue">
+                        <span data-key="socialTelegram">Telegram</span>
+                    </a>
+                </div>
+                <div class="mb-2 md:mb-0">
+                    <a href="https://x.com/WeAssistprogram" target="_blank" class="hover:underline flex items-center justify-center text-primary-blue">
+                        <span data-key="socialX">X (Twitter)</span>
+                    </a>
+                </div>
+                <div>
+                    <span class="flex items-center justify-center text-primary-blue">
+                        <span data-key="socialDexScreener">Dex Screener (Coming Soon)</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid of Information Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Card 1: About $WAP -->
+            <a href="#about" class="info-card p-6 block">
+                <h3 class="text-xl font-semibold mb-2" data-key="card1Title">About $WAP</h3>
+                <p class="text-gray-700" data-key="card1Desc">Learn about the mission, vision, and community values of the Welfare Assistance Program.</p>
+            </a>
+
+            <!-- Card 2: Tokenomics -->
+            <a href="#tokenomics" class="info-card p-6 block">
+                <h3 class="text-xl font-semibold mb-2" data-key="card2Title">Tokenomics</h3>
+                <p class="text-gray-700" data-key="card2Desc">Understand the 1 Billion $WAP supply, liquidity, and fee distribution for "Welfare Checks."</p>
+            </a>
+
+            <!-- Card 3: Welfare Checks -->
+            <a href="#lottery" class="info-card p-6 block">
+                <h3 class="text-xl font-semibold mb-2" data-key="card3Title">Welfare Checks Lottery</h3>
+                <p class="text-gray-700" data-key="card3Desc">Discover how 10 random holders receive hourly Solana rewards from transaction fees.</p>
+            </a>
+
+            <!-- Card 4: How to Buy -->
+            <a href="#how-to-buy" class="info-card p-6 block">
+                <h3 class="text-xl font-semibold mb-2" data-key="card4Title">How to Buy $WAP</h3>
+                <p class="text-gray-700" data-key="card4Desc">A step-by-step guide to setting up your Solana wallet and acquiring $WAP tokens.</p>
+            </a>
+
+            <!-- Card 5: Roadmap -->
+            <a href="#roadmap" class="info-card p-6 block">
+                <h3 class="text-xl font-semibold mb-2" data-key="card5Title">Roadmap & Future Plans</h3>
+                <p class="text-gray-700" data-key="card5Desc">Explore the phases of $WAP development, from launch to global outreach.</p>
+            </a>
+
+            <!-- Card 6: Community Support -->
+            <a href="#community" class="info-card p-6 block">
+                <h3 class="text-xl font-semibold mb-2" data-key="card6Title">Community & Support</h3>
+                <p class="text-gray-700" data-key="card6Desc">Join our official channels and connect with the $WAP Welfare Assistance community.</p>
+            </a>
+
+            <!-- Card 7: Official Contract Address -->
+            <div class="info-card p-6" id="contract-address">
+                <h3 class="text-xl font-semibold mb-2" data-key="card7Title">Official Contract Address</h3>
+                <p class="text-gray-700 break-all" data-key="card7Desc"><code>0x...[Insert $WAP Smart Contract Address Here]...</code></p>
+            </div>
+
+            <!-- Card 8: Disclaimer -->
+            <div class="info-card p-6" id="disclaimer">
+                <h3 class="text-xl font-semibold mb-2" data-key="card8Title">Disclaimer</h3>
+                <p class="text-gray-700" data-key="card8Desc">Cryptocurrency investments are volatile. DYOR before participating in the $WAP program.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Content Sections -->
+        <section id="about" class="bg-white p-8 rounded-lg shadow-md mb-12 detailed-section">
+            <h2 class="text-3xl font-bold mb-6" data-key="aboutTitle">About the $WAP - Welfare Assistance Program</h2>
+            <p class="text-lg leading-relaxed mb-4" data-key="aboutP1">The Degen States Welfare Assistance Program ($WAP) is a groundbreaking initiative designed to bring a new form of community-driven support to its participants. Operating on the principles of decentralization, $WAP aims to foster a vibrant ecosystem where engagement and participation are directly rewarded.</p>
+            <p class="text-lg leading-relaxed mb-4" data-key="aboutP2">Our mission is to create a transparent and equitable system where financial assistance, humor, and community growth go hand-in-hand. We believe in empowering our members through innovative tokenomics and a commitment to shared prosperity. While this is a memecoin for entertainment, its underlying structure is built to encourage active participation and reward loyal community members.</p>
+            <h3 class="text-2xl font-semibold mb-4" data-key="aboutH3">Vision & Values</h3>
+            <ul class="list-disc pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="aboutLi1">**Community First:** Building a strong, supportive, and active community.</li>
+                <li data-key="aboutLi2">**Transparency:** Open and verifiable operations on the blockchain.</li>
+                <li data-key="aboutLi3">**Innovation:** Leveraging decentralized finance for unique reward mechanisms.</li>
+                <li data-key="aboutLi4">**Engagement:** Encouraging active participation through various initiatives.</li>
+            </ul>
+        </section>
+
+        <section id="tokenomics" class="bg-white p-8 rounded-lg shadow-md mb-12 detailed-section">
+            <h2 class="text-3xl font-bold mb-6" data-key="tokenomicsTitle">Understanding $WAP Tokenomics</h2>
+            <p class="text-lg leading-relaxed mb-4" data-key="tokenomicsP1">The $WAP token is built on the Solana blockchain, leveraging its speed and low transaction costs to facilitate frequent rewards. The total supply of $WAP is fixed at **1 Billion tokens**, ensuring scarcity and potential for value appreciation over time.</p>
+            <h3 class="text-2xl font-semibold mb-4" data-key="tokenomicsH3a">Distribution & Liquidity</h3>
+            <p class="text-lg leading-relaxed mb-4" data-key="tokenomicsP2">A significant portion of the $WAP supply is allocated to ensure healthy liquidity on decentralized exchanges, preventing large price swings and allowing for easy buying and selling. Initial liquidity will be securely locked to build trust and stability within the ecosystem.</p>
+            <h3 class="text-2xl font-semibold mb-4" data-key="tokenomicsH3b">"Welfare Checks" Fee Distribution</h3>
+            <p class="text-lg leading-relaxed mb-4" data-key="tokenomicsP3">The $WAP ecosystem implements a **3% transaction tax** on both buys and sells. This tax is strategically distributed to fuel the "Powerball Welfare Checks" and support project growth:</p>
+            <ul class="list-disc pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="tokenomicsLi1">**Total Supply:** 1,000,000,000 $WAP</li>
+                <li data-key="tokenomicsLi2">**Transaction Fee:** 3% on buys and sells.</li>
+                <li data-key="tokenomicsLi3">**Reward Pool:** 90% of tax funds Powerball Welfare Checks.</li>
+                <li data-key="tokenomicsLi4">**Dev/Marketing:** 10% of tax for project development and promotion.</li>
+            </ul>
+        </section>
+
+        <section id="lottery" class="bg-white p-8 rounded-lg shadow-md mb-12 detailed-section">
+            <h2 class="text-3xl font-bold mb-6" data-key="lotteryTitle">The $WAP "Powerball Welfare Checks" Venture</h2>
+            <p class="text-lg leading-relaxed mb-4" data-key="lotteryP1">A core feature of the $WAP ecosystem is the innovative "Powerball Welfare Checks" venture. This system is designed to regularly reward active token holders with Solana, fostering consistent engagement and providing tangible benefits.</p>
+            <p class="text-lg leading-relaxed mb-4" data-key="lotteryP2">Every **hour**, **50 random $WAP holders** will be selected by the system to receive a \"Welfare Check\" paid directly in Solana. To qualify for these hourly Powerball draws, participants must hold a **minimum of 500,000 $WAP** in their wallet.</p>
+            <h3 class="text-2xl font-semibold mb-4" data-key="lotteryH3">How it Works:</h3>
+            <ol class="list-decimal pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="lotteryLi1">**Hold $WAP:** Maintain a minimum of **500,000 $WAP** in your Solana wallet to be eligible.</li>
+                <li data-key="lotteryLi2">**Transaction Tax:** A 3% tax on buys and sells funds the prize pool.</li>
+                <li data-key="lotteryLi3">**Hourly Draws:** Every hour, 50 eligible wallet addresses are randomly selected.</li>
+                <li data-key="lotteryLi4">**Solana Rewards:** The selected holders instantly receive their Solana \"Welfare Check\" directly to their wallet.</li>
+            </ol>
+            <p class="text-lg leading-relaxed mt-4" data-key="lotteryP3">This Powerball venture adds an element of significant excitement and continuous reward, distinguishing $WAP as more than just a standard memecoin by providing substantial hourly opportunities for holders.</p>
+        </section>
+
+        <section id="how-to-buy" class="bg-white p-8 rounded-lg shadow-md mb-12 detailed-section">
+            <h2 class="text-3xl font-bold mb-6" data-key="howToBuyTitle">How to Buy $WAP Tokens: A Step-by-Step Guide</h2>
+            <p class="text-lg leading-relaxed mb-4" data-key="howToBuyP1">Acquiring $WAP tokens is a straightforward process. Follow these steps to set up your Solana wallet and join the Degen States Welfare Assistance Program:</p>
+            <h3 class="text-2xl font-semibold mb-4" data-key="howToBuyH3a">Step 1: Set Up a Solana-Compatible Wallet</h3>
+            <p class="text-lg leading-relaxed mb-2" data-key="howToBuyP2">You'll need a digital wallet that supports the Solana blockchain. Popular options include:</p>
+            <ul class="list-disc pl-8 text-lg leading-relaxed mb-4 space-y-1">
+                <li data-key="howToBuyLi1">**Phantom Wallet:** A popular and user-friendly browser extension and mobile app.</li>
+                <li data-key="howToBuyLi2">**Solflare Wallet:** Another excellent option with both browser extension and hardware wallet support.</li>
+            </ul>
+            <p class="text-lg leading-relaxed mb-4" data-key="howToBuyP3">Download and install your chosen wallet, then follow the instructions to create a new wallet or import an existing one. **Remember to securely store your seed phrase!**</p>
+
+            <h3 class="text-2xl font-semibold mb-4" data-key="howToBuyH3b">Step 2: Fund Your Wallet with Solana (SOL)</h3>
+            <p class="text-lg leading-relaxed mb-4" data-key="howToBuyP4">You'll need Solana (SOL) to purchase $WAP tokens and cover transaction fees. You can buy SOL from major cryptocurrency exchanges such as Coinbase, Binance, Kraken, or FTX (if available in your region). Once purchased, withdraw your SOL to your Solana-compatible wallet address.</p>
+
+            <h3 class="text-2xl font-semibold mb-4" data-key="howToBuyH3c">Step 3: Connect to a Decentralized Exchange (DEX)</h3>
+            <p class="text-lg leading-relaxed mb-4" data-key="howToBuyP5">Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). Popular options include Raydium or Jupiter Aggregator.</p>
+            <ol class="list-decimal pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="howToBuyLi3">Go to your preferred DEX website.</li>
+                <li data-key="howToBuyLi4">Connect your Solana wallet (e.g., Phantom) to the DEX.</li>
+                <li data-key="howToBuyLi5">Locate the trading interface or \"Swap\" section.</li>
+            </ol>
+
+            <h3 class="text-2xl font-semibold mb-4" data-key="howToBuyH3d">Step 4: Swap SOL for $WAP</h3>
+            <ol class="list-decimal pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="howToBuyLi6">In the \"Swap\" interface, select SOL as the token you want to trade FROM.</li>
+                <li data-key="howToBuyLi7">Enter the $WAP contract address (which will be officially announced on our channels and listed in the 'Official Contract Address' section on this page) into the \"TO\" field to find $WAP.</li>
+                <li data-key="howToBuyLi8">Enter the amount of SOL you wish to swap for $WAP. The DEX will show you the approximate amount of $WAP you will receive.</li>
+                <li data-key="howToBuyLi9">Review the transaction details (including slippage tolerance, typically set to auto or a small percentage like 0.5-1%).</li>
+                <li data-key="howToBuyLi10">Confirm the swap in your wallet.</li>
+            </ol>
+            <p class="text-lg leading-relaxed mt-4" data-key="howToBuyP6">Congratulations! You are now a proud holder of $WAP tokens and eligible for the \"Welfare Checks\" Lottery!</p>
+        </section>
+
+        <section id="roadmap" class="bg-white p-8 rounded-lg shadow-md mb-12 detailed-section">
+            <h2 class="text-3xl font-bold mb-6" data-key="roadmapTitle">Roadmap & Future Plans for $WAP</h2>
+            <p class="text-lg leading-relaxed mb-4" data-key="roadmapP1">The $WAP project has a clear and ambitious roadmap designed to ensure continuous growth, expand its community, and enhance the utility and fun factor of the token. Our journey is divided into several key phases:</p>
+
+            <h3 class="text-2xl font-semibold mb-4" data-key="roadmapH3a">Phase 1: Launch & Foundation (Completed)</h3>
+            <ul class="list-disc pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="roadmapLi1">Smart Contract Development & Audit</li>
+                <li data-key="roadmapLi2">Initial Liquidity Provision & Locking</li>
+                <li data-key="roadmapLi3">Website Launch (WAP.gov)</li>
+                <li data-key="roadmapLi4">Community Building (Telegram, Discord, X/Twitter)</li>
+                <li data-key="roadmapLi5">Introduction of "Welfare Checks" Lottery</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mb-4" data-key="roadmapH3b">Phase 2: Growth & Expansion (Current Focus)</h3>
+            <ul class="list-disc pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="roadmapLi6">Strategic Marketing Campaigns & Influencer Partnerships</li>
+                <li data-key="roadmapLi7">Community Contests & Engagement Events</li>
+                <li data-key="roadmapLi8">Partnerships with Solana ecosystem projects</li>
+                <li data-key="roadmapLi9">Development of $WAP merchandise store</li>
+                <li data-key="roadmapLi10">Further enhancements to the "Welfare Checks" mechanics</li>
+                <li data-key="roadmapLi16">**Introduction of $WAP NFTs:** Launching a unique collection of NFTs for community engagement and exclusive benefits.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mb-4" data-key="roadmapH3c">Phase 3: Utility & Global Outreach (Future)</h3>
+            <ul class="list-disc pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="roadmapLi11">Integration with broader DeFi applications</li>
+                <li data-key="roadmapLi12">Potential for $WAP staking or farming opportunities</li>
+                <li data-key="roadmapLi13">Expansion into educational initiatives about decentralized welfare</li>
+                <li data-key="roadmapLi14">Global community expansion and localization efforts</li>
+                <li data-key="roadmapLi15">Exploration of real-world utility partnerships (e.g., charity donations using $WAP proceeds)</li>
+            </ul>
+            <p class="text-lg leading-relaxed mt-4" data-key="roadmapP2">This roadmap is a living document and may be adjusted based on community feedback and market conditions. Our commitment is to sustainable growth and maximizing value for $WAP holders.</p>
+        </section>
+
+        <section id="community" class="bg-white p-8 rounded-lg shadow-md mb-12 detailed-section">
+            <h2 class="text-3xl font-bold mb-6" data-key="communityTitle">Join the $WAP Community & Get Support</h2>
+            <p class="text-lg leading-relaxed mb-4" data-key="communityP1">The strength of the Degen States Welfare Assistance Program lies in its vibrant and active community. We encourage all participants to join our official channels to stay updated, share ideas, and connect with fellow $WAP holders.</p>
+            <h3 class="text-2xl font-semibold mb-4" data-key="communityH3">Official Channels:</h3>
+            <ul class="list-disc pl-8 text-lg leading-relaxed space-y-2">
+                <li data-key="communityLi1">**Telegram:** <a href="https://t.me/+rO3Citn46Xk3YWQx" class="text-blue-600 hover:underline" target="_blank">t.me/+rO3Citn46Xk3YWQx</a> - For real-time chat and announcements.</li>
+                <li data-key="communityLi2">**Discord:** <a href="https://discord.gg/WAPofficial" class="text-blue-600 hover:underline" target="_blank">discord.gg/WAPofficial</a> - For in-depth discussions, support, and special events.</li>
+                <li data-key="communityLi3">**X (formerly Twitter):** <a href="https://x.com/WeAssistprogram" class="text-blue-600 hover:underline" target="_blank">@WeAssistprogram</a> - For quick updates, news, and community polls.</li>
+                <li data-key="communityLi4">**Reddit:** <a href="https://reddit.com/r/WAPcommunity" class="text-blue-600 hover:underline" target="_blank">reddit.com/r/WAPcommunity</a> - For longer discussions and content sharing.</li>
+            </ul>
+            <p class="text-lg leading-relaxed mt-4" data-key="communityP2">Our community moderators are available to answer your questions and provide assistance. Remember to always be cautious of scams and only follow links from our official channels.</p>
+        </section>
+
+        <!-- Official Contract Address and Disclaimer remain as static cards -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="info-card p-6" id="contract-address">
+                <h3 class="text-xl font-semibold mb-2" data-key="contractTitle">Official Contract Address</h3>
+                <p class="text-gray-700 break-all" data-key="contractDesc"><code>0x...[Insert $WAP Smart Contract Address Here]...</code></p>
+            </div>
+
+            <div class="info-card p-6" id="disclaimer">
+                <h3 class="text-xl font-semibold mb-2" data-key="disclaimerTitle">Disclaimer</h3>
+                <p class="text-gray-700" data-key="disclaimerDesc">Cryptocurrency investments are volatile. DYOR before participating in the $WAP program.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="header-top py-6 px-4 text-center text-sm mt-12">
+        <p class="mb-2" data-key="footerCopyright">&copy; 2025 Degen States Welfare Assistance Program. All rights reserved.</p>
+        <p data-key="footerDisclaimer">This is a memecoin for entertainment purposes only and is not affiliated with any government entity.</p>
+        <p class="mt-2">
+            <a href="#" class="text-blue-700 hover:underline mr-4" data-key="footerPrivacy">Privacy Policy</a>
+            <a href="#" class="text-blue-700 hover:underline" data-key="footerTerms">Terms of Service</a>
+        </p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                programName: "Degen States Welfare Assistance Program",
+                officialPortal: "WAP.gov - Official Portal",
+                navAbout: "About $WAP",
+                navTokenomics: "Tokenomics",
+                navHowToBuy: "How to Buy",
+                navRoadmap: "Roadmap",
+                navCommunity: "Community",
+                home: "Home",
+                wapBenefits: "WAP Benefits",
+                mainTitle: "Welfare Assistance Program",
+                mostPopularTitle: "Most Popular",
+                mostPopularVision: "Learn about $WAP's Vision",
+                mostPopularTokenomics: "Get information on $WAP Tokenomics",
+                mostPopularLottery: "Find out about \"Welfare Checks\" Lottery",
+                heroDesc1: "Get information on the $WAP Welfare Assistance Program, designed to provide support and good times through our unique decentralized benefits system.",
+                heroDesc2: "The $WAP initiative aims to create a community-driven ecosystem where participants can receive regular \"welfare checks\" in Solana, funded by transaction fees.",
+                card1Title: "About $WAP",
+                card1Desc: "Learn about the mission, vision, and community values of the Welfare Assistance Program.",
+                card2Title: "Tokenomics",
+                card2Desc: "Understand the 1 Billion $WAP supply, liquidity, and fee distribution for \"Welfare Checks.\"",
+                card3Title: "Welfare Checks Lottery",
+                card3Desc: "Discover how 10 random holders receive hourly Solana rewards from transaction fees.",
+                card4Title: "How to Buy $WAP",
+                card4Desc: "A step-by-step guide to setting up your Solana wallet and acquiring $WAP tokens.",
+                card5Title: "Roadmap & Future Plans",
+                card5Desc: "Explore the phases of $WAP development, from launch to global outreach.",
+                card6Title: "Community & Support",
+                card6Desc: "Join our official channels and connect with the $WAP Welfare Assistance community.",
+                card7Title: "Official Contract Address",
+                card7Desc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code>",
+                card8Title: "Disclaimer",
+                card8Desc: "Cryptocurrency investments are volatile. DYOR before participating in the $WAP program.",
+                aboutTitle: "About the $WAP - Welfare Assistance Program",
+                aboutP1: "The Degen States Welfare Assistance Program ($WAP) is a groundbreaking initiative designed to bring a new form of community-driven support to its participants. Operating on the principles of decentralization, $WAP aims to foster a vibrant ecosystem where engagement and participation are directly rewarded.",
+                aboutP2: "Our mission is to create a transparent and equitable system where financial assistance, humor, and community growth go hand-in-hand. We believe in empowering our members through innovative tokenomics and a commitment to shared prosperity. While this is a memecoin for entertainment, its underlying structure is built to encourage active participation and reward loyal community members.",
+                aboutH3: "Vision & Values",
+                aboutLi1: "**Community First:** Building a strong, supportive, and active community.",
+                aboutLi2: "**Transparency:** Open and verifiable operations on the blockchain.",
+                aboutLi3: "**Innovation:** Leveraging decentralized finance for unique reward mechanisms.",
+                aboutLi4: "**Engagement:** Encouraging active participation through various initiatives.",
+                tokenomicsTitle: "Understanding $WAP Tokenomics",
+                tokenomicsP1: "The $WAP token is built on the Solana blockchain, leveraging its speed and low transaction costs to facilitate frequent rewards. The total supply of $WAP is fixed at **1 Billion tokens**, ensuring scarcity and potential for value appreciation over time.",
+                tokenomicsH3a: "Distribution & Liquidity",
+                tokenomicsP2: "A significant portion of the $WAP supply is allocated to ensure healthy liquidity on decentralized exchanges, preventing large price swings and allowing for easy buying and selling. Initial liquidity will be securely locked to build trust and stability within the ecosystem.",
+                tokenomicsH3b: "\"Welfare Checks\" Fee Distribution",
+                tokenomicsP3: "The $WAP ecosystem implements a **3% transaction tax** on both buys and sells. This tax is strategically distributed to fuel the \"Powerball Welfare Checks\" and support project growth:",
+                tokenomicsLi1: "**Total Supply:** 1,000,000,000 $WAP",
+                tokenomicsLi2: "**Transaction Fee:** 3% on buys and sells.",
+                tokenomicsLi3: "**Reward Pool:** 90% of tax funds Powerball Welfare Checks.",
+                tokenomicsLi4: "**Dev/Marketing:** 10% of tax for project development and promotion.",
+                lotteryTitle: "The $WAP \"Powerball Welfare Checks\" Venture",
+                lotteryP1: "A core feature of the $WAP ecosystem is the innovative \"Powerball Welfare Checks\" venture. This system is designed to regularly reward active token holders with Solana, fostering consistent engagement and providing tangible benefits.",
+                lotteryP2: "Every **hour**, **50 random $WAP holders** will be selected by the system to receive a \"Welfare Check\" paid directly in Solana. To qualify for these hourly Powerball draws, participants must hold a **minimum of 500,000 $WAP** in their wallet.",
+                lotteryH3: "How it Works:",
+                lotteryLi1: "**Hold $WAP:** Maintain a minimum of **500,000 $WAP** in your Solana wallet to be eligible.",
+                lotteryLi2: "**Transaction Tax:** A 3% tax on buys and sells funds the prize pool.",
+                lotteryLi3: "**Hourly Draws:** Every hour, 50 eligible wallet addresses are randomly selected.",
+                lotteryLi4: "**Solana Rewards:** The selected holders instantly receive their Solana \"Welfare Check\" directly to their wallet.",
+                lotteryP3: "This Powerball venture adds an element of significant excitement and continuous reward, distinguishing $WAP as more than just a standard memecoin by providing substantial hourly opportunities for holders.",
+                howToBuyTitle: "How to Buy $WAP Tokens: A Step-by-Step Guide",
+                howToBuyP1: "Acquiring $WAP tokens is a straightforward process. Follow these steps to set up your Solana wallet and join the Degen States Welfare Assistance Program:",
+                howToBuyH3a: "Step 1: Set Up a Solana-Compatible Wallet",
+                howToBuyP2: "You'll need a digital wallet that supports the Solana blockchain. Popular options include:",
+                howToBuyLi1: "**Phantom Wallet:** A popular and user-friendly browser extension and mobile app.",
+                howToBuyLi2: "**Solflare Wallet:** Another excellent option with both browser extension and hardware wallet support.",
+                howToBuyP3: "Download and install your chosen wallet, then follow the instructions to create a new wallet or import an existing one. **Remember to securely store your seed phrase!**",
+                howToBuyH3b: "Step 2: Fund Your Wallet with Solana (SOL)",
+                howToBuyP4: "You'll need Solana (SOL) to purchase $WAP tokens and cover transaction fees. You can buy SOL from major cryptocurrency exchanges such as Coinbase, Binance, Kraken, or FTX (if available in your region). Once purchased, withdraw your SOL to your Solana-compatible wallet address.",
+                howToBuyH3c: "Step 3: Connect to a Decentralized Exchange (DEX)",
+                howToBuyP5: "Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). Popular options include Raydium or Jupiter Aggregator.",
+                howToBuyLi3: "Go to your preferred DEX website.",
+                howToBuyLi4: "Connect your Solana wallet (e.g., Phantom) to the DEX.",
+                howToBuyLi5: "Locate the trading interface or \"Swap\" section.",
+                howToBuyH3d: "Step 4: Swap SOL for $WAP",
+                howToBuyLi6: "In the \"Swap\" interface, select SOL as the token you want to trade FROM.",
+                howToBuyLi7: "Enter the $WAP contract address (which will be officially announced on our channels and listed in the 'Official Contract Address' section on this page) into the \"TO\" field to find $WAP.",
+                howToBuyLi8: "Enter the amount of SOL you wish to swap for $WAP. The DEX will show you the approximate amount of $WAP you will receive.",
+                howToBuyLi9: "Review the transaction details (including slippage tolerance, typically set to auto or a small percentage like 0.5-1%).",
+                howToBuyLi10: "Confirm the swap in your wallet.",
+                howToBuyP6: "Congratulations! You are now a proud holder of $WAP tokens and eligible for the \"Welfare Checks\" Lottery!",
+                roadmapTitle: "Roadmap & Future Plans for $WAP",
+                roadmapP1: "The $WAP project has a clear and ambitious roadmap designed to ensure continuous growth, expand its community, and enhance the utility and fun factor of the token. Our journey is divided into several key phases:",
+                roadmapH3a: "Phase 1: Launch & Foundation (Completed)",
+                roadmapLi1: "Smart Contract Development & Audit",
+                roadmapLi2: "Initial Liquidity Provision & Locking",
+                roadmapLi3: "Website Launch (WAP.gov)",
+                roadmapLi4: "Community Building (Telegram, Discord, X/Twitter)",
+                roadmapLi5: "Introduction of \"Welfare Checks\" Lottery",
+                roadmapH3b: "Phase 2: Growth & Expansion (Current Focus)",
+                roadmapLi6: "Strategic Marketing Campaigns & Influencer Partnerships",
+                roadmapLi7: "Community Contests & Engagement Events",
+                roadmapLi8: "Partnerships with Solana ecosystem projects",
+                roadmapLi9: "Development of $WAP merchandise store",
+                roadmapLi10: "Further enhancements to the \"Welfare Checks\" mechanics",
+                roadmapLi16: "**Introduction of $WAP NFTs:** Launching a unique collection of NFTs for community engagement and exclusive benefits.",
+                roadmapH3c: "Phase 3: Utility & Global Outreach (Future)",
+                roadmapLi11: "Integration with broader DeFi applications",
+                roadmapLi12: "Potential for $WAP staking or farming opportunities",
+                roadmapLi13: "Expansion into educational initiatives about decentralized welfare",
+                roadmapLi14: "Global community expansion and localization efforts",
+                roadmapLi15: "Exploration of real-world utility partnerships (e.g., charity donations using $WAP proceeds)",
+                roadmapP2: "This roadmap is a living document and may be adjusted based on community feedback and market conditions. Our commitment is to sustainable growth and maximizing value for $WAP holders.",
+                communityTitle: "Join the $WAP Community & Get Support",
+                communityP1: "The strength of the Degen States Welfare Assistance Program lies in its vibrant and active community. We encourage all participants to join our official channels to stay updated, share ideas, and connect with fellow $WAP holders.",
+                communityH3: "Official Channels:",
+                communityLi1: "**Telegram:** <a href=\"https://t.me/+rO3Citn46Xk3YWQx\" class=\"text-blue-600 hover:underline\" target=\"_blank\">t.me/+rO3Citn46Xk3YWQx</a> - For real-time chat and announcements.",
+                communityLi2: "**Discord:** <a href=\"https://discord.gg/WAPofficial\" class=\"text-blue-600 hover:underline\" target=\"_blank\">discord.gg/WAPofficial</a> - For in-depth discussions, support, and special events.",
+                communityLi3: "**X (formerly Twitter):** <a href=\"https://x.com/WeAssistprogram\" class=\"text-blue-600 hover:underline\" target=\"_blank\">@WeAssistprogram</a> - For quick updates, news, and community polls.",
+                socialMediaTitle: "Follow Us on Social Media",
+                socialTelegram: "Telegram",
+                socialX: "X (Twitter)",
+                socialDexScreener: "Dex Screener (Coming Soon)",
+                communityLi4: "**Reddit:** <a href=\"https://reddit.com/r/WAPcommunity\" class=\"text-blue-600 hover:underline\" target=\"_blank\">reddit.com/r/WAPcommunity</a> - For longer discussions and content sharing.",
+                communityP2: "Our community moderators are available to answer your questions and provide assistance. Remember to always be cautious of scams and only follow links from our official channels.",
+                contractTitle: "Official Contract Address",
+                contractDesc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code>",
+                disclaimerTitle: "Disclaimer",
+                disclaimerDesc: "Cryptocurrency investments are volatile. DYOR before participating in the $WAP program.",
+                footerCopyright: "&copy; 2025 Degen States Welfare Assistance Program. All rights reserved.",
+                footerDisclaimer: "This is a memecoin for entertainment purposes only and is not affiliated with any government entity.",
+                footerPrivacy: "Privacy Policy",
+                footerTerms: "Terms of Service"
+            },
+            degen: {
+                programName: "Degen States Welfare Assistance Program - WAGMI Edition",
+                officialPortal: "WAP.gov - Alpha Portal",
+                navAbout: "Ape into $WAP",
+                navTokenomics: "Tokenomics (Wen Moon?)",
+                navHowToBuy: "How to Yolo",
+                navRoadmap: "Roadmap (LFG!)",
+                navCommunity: "Degens Only",
+                home: "Home (Ser)",
+                wapBenefits: "WAP Gains",
+                mainTitle: "Welfare Assistance Program - Get Your Bag!",
+                mostPopularTitle: "Alpha Leaks",
+                mostPopularVision: "Scope $WAP's Moon Mission",
+                mostPopularTokenomics: "Get the 411 on $WAP Tokenomics (DYOR!)",
+                mostPopularLottery: "Check out the \"Welfare Checks\" (Free SOL!)",
+                heroDesc1: "Get the alpha on the $WAP Welfare Assistance Program, designed to pump your bags and deliver mad gains through our based decentralized benefits system.",
+                heroDesc2: "The $WAP initiative is a community-driven play to build generational wealth where participants can scoop regular \"welfare checks\" in Solana, funded by those sweet transaction fees. NFA. DO YOUR OWN RESEARCH.",
+                card1Title: "About $WAP (Based)",
+                card1Desc: "Get the lowdown on the mission, vision, and community vibes of this Welfare Assistance Program. It's gonna be epic.",
+                card2Title: "Tokenomics (To the Moon!)",
+                card2Desc: "Understand the 1 Billion $WAP supply, how we're locking that liquidity, and the fee distribution for those juicy \"Welfare Checks.\" Wen Lambo?",
+                card3Title: "Welfare Checks Lottery (Free SOL!)",
+                card3Desc: "Discover how 10 random holders get hourly Solana airdrops from transaction fees. It's basically free money, anon.",
+                card4Title: "How to Buy $WAP (Ape In!)",
+                card4Desc: "A step-by-step guide to setting up your Solana wallet and aping into $WAP tokens. Don't be late!",
+                card5Title: "Roadmap & Future Plans (LFG!)",
+                card5Desc: "Explore the phases of $WAP development, from launch to global domination. We're just getting started, ser.",
+                card6Title: "Community & Support (Degens Assemble!)",
+                card6Desc: "Join our official channels, shill your bags, and connect with the $WAP Degen Army. We're all gonna make it.",
+                card7Title: "Official Contract Address (Don't Get Rekt)",
+                card7Desc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code> (Verify this, anon. Don't get rekt by fake contracts.)",
+                card8Title: "Disclaimer (NFA. DYOR. Seriously.)",
+                card8Desc: "Crypto is wild. Prices go up, prices go down, sometimes they go sideways. Do your own research before aping into the $WAP program. Not financial advice.",
+                aboutTitle: "About the $WAP - Welfare Assistance Program (Based AF)",
+                aboutP1: "The Degen States Welfare Assistance Program ($WAP) is a groundbreaking initiative designed to bring a new form of community-driven support to its participants. Operating on the principles of decentralization, $WAP aims to foster a vibrant ecosystem where engagement and participation are directly rewarded. We're building different.",
+                aboutP2: "Our mission is to create a transparent and equitable system where financial assistance, alpha leaks, and community pumps go hand-in-hand. We believe in empowering our degens through innovative tokenomics and a commitment to shared prosperity. While this is a memecoin for pure vibes, its underlying structure is built to encourage active participation and reward loyal diamond hands. WAGMI.",
+                aboutH3: "Vision & Values (To the Moon!)",
+                aboutLi1: "**Community First:** Building a strong, supportive, and based community. We're all in this together, anon.",
+                aboutLi2: "**Transparency:** Open and verifiable ops on the blockchain. No rug pulls here, ser.",
+                aboutLi3: "**Innovation:** Leveraging DeFi for insane reward mechanisms. Get ready for passive income.",
+                aboutLi4: "**Engagement:** Encouraging active participation through shilling, memes, and pure degen energy.",
+                tokenomicsTitle: "Understanding $WAP Tokenomics (The Alpha)",
+                tokenomicsP1: "The $WAP token is built on the Solana blockchain, leveraging its speed and low gas fees to facilitate frequent rewards. The total supply of $WAP is hard-capped at **1 Billion tokens**, ensuring scarcity and potential for parabolic gains over time. Scarcity = value, anon.",
+                tokenomicsH3a: "Distribution & Liquidity (Locked & Loaded)",
+                tokenomicsP2: "A fat chunk of the $WAP supply is allocated to ensure healthy liquidity on decentralized exchanges, preventing nasty dumps and allowing for easy buys and sells. Initial liquidity will be securely locked to build trust and stability within the ecosystem. No rugs, just gains.",
+                tokenomicsH3b: "\"Welfare Checks\" Fee Distribution (Passive Income Machine)",
+                tokenomicsP3: "A small transaction tax is applied to all $WAP token trades. This tax is strategically distributed to fund the \"Powerball Welfare Checks\" Lottery, ensuring a sustainable reward system for active holders. This mechanism directly pumps the bags of the community without relying on external funding or inflationary measures. Pure genius.",
+                tokenomicsLi1: "**Total Supply:** 1,000,000,000 $WAP (Fixed, like our diamond hands)",
+                tokenomicsLi2: "**Transaction Fee:** A tiny percentage on buys and sells (for the greater good of the bag).",
+                tokenomicsLi3: "**Reward Pool:** A portion of fees directly funds hourly Solana \"Welfare Checks.\" (Free SOL, ser!)",
+                tokenomicsLi4: "**Liquidity Pool:** Another portion beefs up liquidity and stability (No more nasty slippage).",
+                lotteryTitle: "The $WAP \"Welfare Checks\" Lottery (Wen Lambo?)",
+                lotteryP1: "A core feature of the $WAP ecosystem is the innovative \"Welfare Checks\" Lottery. This system is designed to regularly reward active token holders with Solana, fostering consistent engagement and providing tangible benefits. It's like winning the lottery, but hourly.",
+                lotteryP2: "Every hour, **10 random $WAP holders** are selected to receive a \"Welfare Check\" paid directly in Solana. The funds for these checks are accumulated from the transaction fees generated within the $WAP ecosystem. This creates a self-sustaining reward loop that incentivizes holding and trading $WAP tokens. Get ready for those notifications.",
+                lotteryH3: "How it Works (It's Simple, Degens):",
+                lotteryLi1: "**Hold $WAP:** Just hold $WAP tokens in your Solana wallet. Minimum holding requirements for eligibility will be announced, so stack those bags.",
+                lotteryLi2: "**Trade $WAP:** Transaction fees from buying and selling $WAP contribute to the prize pool. Every trade fuels the next win.",
+                lotteryLi3: "**Hourly Drawings:** Every 60 minutes, our based smart contract randomly selects 10 eligible wallet addresses. Pure randomness, pure gains.",
+                lotteryLi4: "**Solana Rewards:** The selected holders instantly receive their Solana \"Welfare Check\" directly to their wallet. Instant gratification, anon.",
+                lotteryP3: "This lottery system adds an element of pure hype and continuous reward, distinguishing $WAP as more than just a standard memecoin. It's a lifestyle.",
+                howToBuyTitle: "How to Buy $WAP Tokens: A Step-by-Step Guide (Ape In Now!)",
+                howToBuyP1: "Acquiring $WAP tokens is a straightforward process. Follow these steps to set up your Solana wallet and join the Degen States Welfare Assistance Program. Don't fade this, anon.",
+                howToBuyH3a: "Step 1: Set Up a Solana-Compatible Wallet (Get a Wallet, Ser)",
+                howToBuyP2: "You'll need a digital wallet that supports the Solana blockchain. Popular options for true degens include:",
+                howToBuyLi1: "**Phantom Wallet:** A popular and user-friendly browser extension and mobile app. It's clean, it's fast.",
+                howToBuyLi2: "**Solflare Wallet:** Another based option with both browser extension and hardware wallet support. Keep your keys safe.",
+                howToBuyP3: "Download and install your chosen wallet, then follow the instructions to create a new wallet or import an existing one. **Remember to securely store your seed phrase! Never share it, anon!**",
+                howToBuyH3b: "Step 2: Fund Your Wallet with Solana (SOL) (Get Some Gas)",
+                howToBuyP4: "You'll need Solana (SOL) to ape into $WAP tokens and cover those tiny transaction fees. You can buy SOL from major centralized exchanges like Coinbase, Binance, Kraken, or FTX (if you're still using it, ser). Once purchased, withdraw your SOL to your Solana-compatible wallet address. Always double-check that address!",
+                howToBuyH3c: "Step 3: Connect to a Decentralized Exchange (DEX) (Where the Magic Happens)",
+                howToBuyP5: "Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). True degens use these. Popular options include Raydium or Jupiter Aggregator.",
+                howToBuyLi3: "Go to your preferred DEX website (bookmark it, anon, avoid phishing).",
+                howToBuyLi4: "Connect your Solana wallet (e.g., Phantom) to the DEX. Authorize the connection.",
+                howToBuyLi5: "Locate the trading interface or \"Swap\" section. It's usually obvious.",
+                howToBuyH3d: "Step 4: Swap SOL for $WAP (Send It!)",
+                howToBuyLi6: "In the \"Swap\" interface, select SOL as the token you want to trade FROM. Easy.",
+                howToBuyLi7: "Enter the $WAP contract address (which will be officially announced on our channels and listed in the 'Official Contract Address' section on this page) into the \"TO\" field to find $WAP. VERIFY THE CONTRACT ADDRESS! Don't get rugged.",
+                howToBuyLi8: "Enter the amount of SOL you wish to swap for $WAP. The DEX will show you the approximate amount of $WAP you will receive. Max it out, anon.",
+                howToBuyLi9: "Review the transaction details (including slippage tolerance, typically set to auto or a small percentage like 0.5-1%). Adjust slippage if needed for fast-moving markets.",
+                howToBuyLi10: "Confirm the swap in your wallet. Sign the transaction. BOOM! You're in.",
+                howToBuyP6: "Congratulations! You are now a proud holder of $WAP tokens and eligible for the \"Welfare Checks\" Lottery! Welcome to the fam, ser. WAGMI!",
+                roadmapTitle: "Roadmap & Future Plans for $WAP (The Master Plan)",
+                roadmapP1: "The $WAP project has a clear and ambitious roadmap designed to ensure continuous growth, expand its community, and enhance the utility and pure fun factor of the token. Our journey is divided into several key phases. We're building for the long haul, anon.",
+                roadmapH3a: "Phase 1: Launch & Foundation (Alpha Stage - Complete)",
+                roadmapLi1: "Smart Contract Development & Audit (Solid code, no exploits)",
+                roadmapLi2: "Initial Liquidity Provision & Locking (Rug-proof, ser)",
+                roadmapLi3: "Website Launch (WAP.gov - Fresh UI)",
+                roadmapLi4: "Community Building (Telegram, Discord, X/Twitter - Degens unite!)",
+                roadmapLi5: "Introduction of \"Welfare Checks\" Lottery (Free SOL, hourly!)",
+                roadmapH3b: "Phase 2: Growth & Expansion (Current Grind - LFG!)",
+                roadmapLi6: "Strategic Marketing Campaigns & Influencer Partnerships (Getting that mainstream alpha)",
+                roadmapLi7: "Community Contests & Engagement Events (More freebies and good times)",
+                roadmapLi8: "Partnerships with Solana ecosystem projects (Cross-chain synergy, anon)",
+                roadmapLi9: "Development of $WAP merchandise store (Flex your WAP gear)",
+                roadmapLi10: "Further enhancements to the \"Welfare Checks\" mechanics (More ways to get paid)",
+                roadmapLi16: "**Introduction of $WAP NFTs:** Launching a unique collection of NFTs for community engagement, exclusive benefits, and bragging rights. Get ready for those whitelist spots!",
+                roadmapH3c: "Phase 3: Utility & Global Outreach (Future - Wen Moon?)",
+                roadmapLi11: "Integration with broader DeFi applications (Yield farming, staking, the whole nine yards)",
+                roadmapLi12: "Potential for $WAP staking or farming opportunities (Passive income maxxing)",
+                roadmapLi13: "Expansion into educational initiatives about decentralized welfare (Teaching the normies about the future)",
+                roadmapLi14: "Global community expansion and localization efforts (WAP to the world!)",
+                roadmapLi15: "Exploration of real-world utility partnerships (e.g., charity donations using $WAP proceeds - doing good while getting rich)",
+                roadmapP2: "This roadmap is a living document and may be adjusted based on community feedback and market conditions. Our commitment is to sustainable growth and maximizing value for $WAP holders. We're in this together, ser. WAGMI!",
+                communityTitle: "Join the $WAP Community & Get Support (Degen Army Strong!)",
+                communityP1: "The strength of the Degen States Welfare Assistance Program lies in its vibrant and active community. We encourage all participants to join our official channels to stay updated on alpha, share your hottest takes, and connect with fellow $WAP holders. Don't be a lurker, anon!",
+                communityH3: "Official Channels (Follow the Alpha):",
+                communityLi1: "**Telegram:** <a href=\"https://t.me/+rO3Citn46Xk3YWQx\" class=\"text-blue-600 hover:underline\" target=\"_blank\">t.me/+rO3Citn46Xk3YWQx</a> - For real-time alpha calls and based chats. Get in there!",
+                communityLi2: "**Discord:** <a href=\"https://discord.gg/WAPofficial\" class=\"text-blue-600 hover:underline\" target=\"_blank\">discord.gg/WAPofficial</a> - For in-depth discussions, support, and exclusive events. Don't miss out on the vibes.",
+                communityLi3: "**X (formerly Twitter):** <a href=\"https://x.com/WeAssistprogram\" class=\"text-blue-600 hover:underline\" target=\"_blank\">@WeAssistprogram</a> - For quick updates, breaking news, and community polls. Follow and retweet, anon!",
+                socialMediaTitle: "Follow the Alpha (Socials)",
+                socialTelegram: "Telegram (Alpha Chat)",
+                socialX: "X (Twitter) (Degens Only)",
+                socialDexScreener: "Dex Screener (Charts Coming Soon - Wen Green?)",
+                communityLi4: "**Reddit:** <a href=\"https://reddit.com/r/WAPcommunity\" class=\"text-blue-600 hover:underline\" target=\"_blank\">reddit.com/r/WAPcommunity</a> - For longer discussions, meme dumps, and content sharing. Upvote everything!",
+                communityP2: "Our community mods are always on standby to drop alpha and provide assistance. Remember to always be cautious of scams and only follow links from our official channels. Stay safe out there, anon. DYOR!",
+                contractTitle: "Official Contract Address (Verify, Verify, Verify!)",
+                contractDesc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code> (Double-check this, anon. Don't get rekt by fake contracts.)",
+                disclaimerTitle: "Disclaimer (NFA. DYOR. Seriously.)",
+                disclaimerDesc: "Cryptocurrency investments are volatile. Prices go up, prices go down, sometimes they go sideways. Do your own research before aping into the $WAP program. This is not financial advice. We're just here for the vibes and the gains. You could lose it all. But also, WAGMI.",
+                footerCopyright: "&copy; 2025 Degen States Welfare Assistance Program. All rights reserved. (We own the memes.)",
+                footerDisclaimer: "This is a memecoin for pure vibes and entertainment purposes only and is not affiliated with any government entity. Don't take it too seriously, anon. Unless you're making bank.",
+                footerPrivacy: "Privacy Policy (We probably know your wallet address, anon)",
+                footerTerms: "Terms of Service (Read it or don't, you're a degen anyway)"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function updateContent() {
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang] && translations[currentLang][key]) {
+                    if (key.startsWith('aboutLi') || key.startsWith('tokenomicsLi') || key.startsWith('roadmapLi') || key.startsWith('howToBuyLi') || key.startsWith('communityLi')) {
+                        element.innerHTML = translations[currentLang][key];
+                    } else {
+                        element.textContent = translations[currentLang][key];
+                    }
+                }
+            });
+            document.querySelector('title').textContent = translations[currentLang].programName + " - " + (currentLang === 'en' ? "Official Portal" : (currentLang === 'es' ? "Portal Oficial" : "Alpha Portal"));
+            document.querySelector('input[placeholder="Search WAP.gov..."]').placeholder = (currentLang === 'en' ? "Search WAP.gov..." : (currentLang === 'es' ? "Buscar WAP.gov..." : "Ape into WAP.gov..."));
+        }
+
+        // Function to update the Powerball Tracker value
+        async function updatePowerballTracker() {
+            const tokenAddress = "YOUR_WAP_TOKEN_CONTRACT_ADDRESS"; // <<< IMPORTANT: Replace with your actual $WAP token contract address
+            const chainId = "solana"; // Assuming Solana blockchain
+
+            // Placeholder for actual Dexscreener API call
+            // In a real application, you'd fetch data like this:
+            /*
+            try {
+                const response = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`);
+                const data = await response.json();
+                // Assuming the API returns a structure like { pairs: [{ volume: { h24: ... } }] }
+                const currentTotalVolume = data.pairs[0].volume.h24; // Or h1 for hourly volume if available
+            } catch (error) {
+                console.error("Error fetching Dexscreener data:", error);
+                // Fallback to simulated volume on error
+                const minVolume = 100000;
+                const maxVolume = 1000000;
+                const currentTotalVolume = Math.random() * (maxVolume - minVolume) + minVolume;
+            }
+            */
+
+            // --- SIMULATED VOLUME FOR DEMONSTRATION ---
+            const minVolume = 100000;
+            const maxVolume = 1000000;
+            const currentTotalVolume = Math.random() * (maxVolume - minVolume) + minVolume;
+            // --- END SIMULATED VOLUME ---
+
+
+            const taxRate = 0.03; // 3%
+            const holdersPercentage = 0.90; // 90% of the tax goes to holders
+            const numberOfWinners = 50;
+
+            const totalTaxCollected = currentTotalVolume * taxRate;
+            const amountForHolders = totalTaxCollected * holdersPercentage;
+            const rewardPerWinner = amountForHolders / numberOfWinners;
+
+            const trackerElement = document.getElementById('powerball-tracker-value');
+            if (trackerElement) {
+                trackerElement.textContent = `$${rewardPerWinner.toFixed(2)} SOL`;
+            }
+        }
+
+        document.getElementById('lang-english').addEventListener('click', (e) => {
+            e.preventDefault();
+            currentLang = 'en';
+            updateContent();
+        });
+
+        document.getElementById('lang-spanish').addEventListener('click', (e) => {
+            e.preventDefault();
+            currentLang = 'es';
+            updateContent();
+        });
+
+        document.getElementById('lang-degen').addEventListener('click', (e) => {
+            e.preventDefault();
+            currentLang = 'degen';
+            updateContent();
+        });
+
+        // Initialize content and tracker on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            updateContent();
+            updatePowerballTracker();
+            // Update the tracker every hour (3600000 milliseconds)
+            // For demo purposes, updating every 10 seconds (10000 milliseconds)
+            setInterval(updatePowerballTracker, 10000);
+        });
+    </script>
+
+</body>
+</html>
