@@ -176,9 +176,9 @@
 
         <!-- Powerball Tracker Section -->
         <section class="bg-cover bg-center text-white py-8 px-4 text-center rounded-lg shadow-lg mb-12" style="background-image: url('https://github.com/E-MO36/miles-for-mango/blob/main/PowerballBackground.png?raw=true');">
-            <h2 class="text-3xl font-bold mb-4" data-key="trackerTitle">Hourly Powerball Tracker</h2>
+            <h2 class="text-3xl font-bold mb-4" data-key="trackerTitle">Daily Powerball Tracker</h2>
             <p class="text-6xl font-extrabold mb-2 text-yellow-300" id="powerball-tracker-value">$0.00 SOL</p>
-            <p class="text-lg font-medium" data-key="trackerInfo">Current estimated reward per winner, based on 3% transaction tax (90% to holders) and 50 winners per hour.</p>
+            <p class="text-lg font-medium" data-key="trackerInfo">Current estimated reward per winner, based on 3% transaction tax (90% to holders) and 50 winners per 24 hours.</p>
         </section>
 
         <!-- Social Media Section -->
@@ -219,8 +219,8 @@
 
             <!-- Card 3: Welfare Checks -->
             <a href="#lottery" class="info-card p-6 block">
-                <h3 class="text-xl font-semibold mb-2" data-key="card3Title">Welfare Checks Lottery</h3>
-                <p class="text-gray-700" data-key="card3Desc">Discover how 10 random holders receive hourly Solana rewards from transaction fees.</p>
+                <h3 class="text-xl font-semibold mb-2" data-key="card3Title">Powerball Welfare Checks Venture</h3>
+                <p class="text-gray-700" data-key="card3Desc">Discover how 50 random holders receive daily Solana rewards from transaction fees.</p>
             </a>
 
             <!-- Card 4: How to Buy -->
@@ -244,7 +244,7 @@
             <!-- Card 7: Official Contract Address -->
             <div class="info-card p-6" id="contract-address">
                 <h3 class="text-xl font-semibold mb-2" data-key="card7Title">Official Contract Address</h3>
-                <p class="text-gray-700 break-all" data-key="card7Desc"><code>0x...[Insert $WAP Smart Contract Address Here]...</code></p>
+                <p class="text-gray-700 break-all" data-key="contractDesc"><code>0x...[Insert $WAP Smart Contract Address Here]...</code></p>
             </div>
 
             <!-- Card 8: Disclaimer -->
@@ -286,15 +286,15 @@
         <section id="lottery" class="bg-white p-8 rounded-lg shadow-md mb-12 detailed-section">
             <h2 class="text-3xl font-bold mb-6" data-key="lotteryTitle">The $WAP "Powerball Welfare Checks" Venture</h2>
             <p class="text-lg leading-relaxed mb-4" data-key="lotteryP1">A core feature of the $WAP ecosystem is the innovative "Powerball Welfare Checks" venture. This system is designed to regularly reward active token holders with Solana, fostering consistent engagement and providing tangible benefits.</p>
-            <p class="text-lg leading-relaxed mb-4" data-key="lotteryP2">Every **hour**, **50 random $WAP holders** will be selected by the system to receive a \"Welfare Check\" paid directly in Solana. To qualify for these hourly Powerball draws, participants must hold a **minimum of 500,000 $WAP** in their wallet.</p>
+            <p class="text-lg leading-relaxed mb-4" data-key="lotteryP2">Every **24 hours**, **50 random $WAP holders** will be selected by the system to receive a \"Welfare Check\" paid directly in Solana. To qualify for these daily Powerball draws, participants must hold a **minimum of 500,000 $WAP** in their wallet.</p>
             <h3 class="text-2xl font-semibold mb-4" data-key="lotteryH3">How it Works:</h3>
             <ol class="list-decimal pl-8 text-lg leading-relaxed space-y-2">
                 <li data-key="lotteryLi1">**Hold $WAP:** Maintain a minimum of **500,000 $WAP** in your Solana wallet to be eligible.</li>
                 <li data-key="lotteryLi2">**Transaction Tax:** A 3% tax on buys and sells funds the prize pool.</li>
-                <li data-key="lotteryLi3">**Hourly Draws:** Every hour, 50 eligible wallet addresses are randomly selected.</li>
+                <li data-key="lotteryLi3">**Daily Draws:** Every 24 hours, 50 eligible wallet addresses are randomly selected.</li>
                 <li data-key="lotteryLi4">**Solana Rewards:** The selected holders instantly receive their Solana \"Welfare Check\" directly to their wallet.</li>
             </ol>
-            <p class="text-lg leading-relaxed mt-4" data-key="lotteryP3">This Powerball venture adds an element of significant excitement and continuous reward, distinguishing $WAP as more than just a standard memecoin by providing substantial hourly opportunities for holders.</p>
+            <p class="text-lg leading-relaxed mt-4" data-key="lotteryP3">This Powerball venture adds an element of significant excitement and continuous reward, distinguishing $WAP as more than just a standard memecoin by providing substantial daily opportunities for holders.</p>
         </section>
 
         <section id="how-to-buy" class="bg-white p-8 rounded-lg shadow-md mb-12 detailed-section">
@@ -386,7 +386,7 @@
 
             <div class="info-card p-6" id="disclaimer">
                 <h3 class="text-xl font-semibold mb-2" data-key="disclaimerTitle">Disclaimer</h3>
-                <p class="text-gray-700" data-key="disclaimerDesc">Cryptocurrency investments are volatile. DYOR before participating in the $WAP program.</p>
+                <p class="text-gray-700" data-key="card8Desc">Cryptocurrency investments are volatile. DYOR before participating in the $WAP program.</p>
             </div>
         </section>
     </main>
@@ -424,8 +424,8 @@
                 card1Desc: "Learn about the mission, vision, and community values of the Welfare Assistance Program.",
                 card2Title: "Tokenomics",
                 card2Desc: "Understand the 1 Billion $WAP supply, liquidity, and fee distribution for \"Welfare Checks.\"",
-                card3Title: "Welfare Checks Lottery",
-                card3Desc: "Discover how 10 random holders receive hourly Solana rewards from transaction fees.",
+                card3Title: "Powerball Welfare Checks Venture",
+                card3Desc: "Discover how 50 random holders receive daily Solana rewards from transaction fees.",
                 card4Title: "How to Buy $WAP",
                 card4Desc: "A step-by-step guide to setting up your Solana wallet and acquiring $WAP tokens.",
                 card5Title: "Roadmap & Future Plans",
@@ -456,13 +456,13 @@
                 tokenomicsLi4: "**Dev/Marketing:** 10% of tax for project development and promotion.",
                 lotteryTitle: "The $WAP \"Powerball Welfare Checks\" Venture",
                 lotteryP1: "A core feature of the $WAP ecosystem is the innovative \"Powerball Welfare Checks\" venture. This system is designed to regularly reward active token holders with Solana, fostering consistent engagement and providing tangible benefits.",
-                lotteryP2: "Every **hour**, **50 random $WAP holders** will be selected by the system to receive a \"Welfare Check\" paid directly in Solana. To qualify for these hourly Powerball draws, participants must hold a **minimum of 500,000 $WAP** in their wallet.",
+                lotteryP2: "Every **24 hours**, **50 random $WAP holders** will be selected by the system to receive a \"Welfare Check\" paid directly in Solana. To qualify for these daily Powerball draws, participants must hold a **minimum of 500,000 $WAP** in their wallet.",
                 lotteryH3: "How it Works:",
                 lotteryLi1: "**Hold $WAP:** Maintain a minimum of **500,000 $WAP** in your Solana wallet to be eligible.",
                 lotteryLi2: "**Transaction Tax:** A 3% tax on buys and sells funds the prize pool.",
-                lotteryLi3: "**Hourly Draws:** Every hour, 50 eligible wallet addresses are randomly selected.",
+                lotteryLi3: "**Daily Draws:** Every 24 hours, 50 eligible wallet addresses are randomly selected.",
                 lotteryLi4: "**Solana Rewards:** The selected holders instantly receive their Solana \"Welfare Check\" directly to their wallet.",
-                lotteryP3: "This Powerball venture adds an element of significant excitement and continuous reward, distinguishing $WAP as more than just a standard memecoin by providing substantial hourly opportunities for holders.",
+                lotteryP3: "This Powerball venture adds an element of significant excitement and continuous reward, distinguishing $WAP as more than just a standard memecoin by providing substantial daily opportunities for holders.",
                 howToBuyTitle: "How to Buy $WAP Tokens: A Step-by-Step Guide",
                 howToBuyP1: "Acquiring $WAP tokens is a straightforward process. Follow these steps to set up your Solana wallet and join the Degen States Welfare Assistance Program:",
                 howToBuyH3a: "Step 1: Set Up a Solana-Compatible Wallet",
@@ -548,8 +548,8 @@
                 card1Desc: "Get the lowdown on the mission, vision, and community vibes of this Welfare Assistance Program. It's gonna be epic.",
                 card2Title: "Tokenomics (To the Moon!)",
                 card2Desc: "Understand the 1 Billion $WAP supply, how we're locking that liquidity, and the fee distribution for those juicy \"Welfare Checks.\" Wen Lambo?",
-                card3Title: "Welfare Checks Lottery (Free SOL!)",
-                card3Desc: "Discover how 10 random holders get hourly Solana airdrops from transaction fees. It's basically free money, anon.",
+                card3Title: "Powerball Welfare Checks Venture",
+                card3Desc: "Discover how 50 random holders get daily Solana airdrops from transaction fees. It's basically free money, anon.",
                 card4Title: "How to Buy $WAP (Ape In!)",
                 card4Desc: "A step-by-step guide to setting up your Solana wallet and aping into $WAP tokens. Don't be late!",
                 card5Title: "Roadmap & Future Plans (LFG!)",
@@ -559,7 +559,7 @@
                 card7Title: "Official Contract Address (Don't Get Rekt)",
                 card7Desc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code> (Verify this, anon. Don't get rekt by fake contracts.)",
                 card8Title: "Disclaimer (NFA. DYOR. Seriously.)",
-                card8Desc: "Crypto is wild. Prices go up, prices go down, sometimes they go sideways. Do your own research before aping into the $WAP program. Not financial advice.",
+                card8Desc: "Crypto is wild. Prices go up, prices go down. Do your own research before aping into the $WAP program. Not financial advice.",
                 aboutTitle: "About the $WAP - Welfare Assistance Program (Based AF)",
                 aboutP1: "The Degen States Welfare Assistance Program ($WAP) is a groundbreaking initiative designed to bring a new form of community-driven support to its participants. Operating on the principles of decentralization, $WAP aims to foster a vibrant ecosystem where engagement and participation are directly rewarded. We're building different.",
                 aboutP2: "Our mission is to create a transparent and equitable system where financial assistance, alpha leaks, and community pumps go hand-in-hand. We believe in empowering our degens through innovative tokenomics and a commitment to shared prosperity. While this is a memecoin for pure vibes, its underlying structure is built to encourage active participation and reward loyal diamond hands. WAGMI.",
@@ -576,17 +576,17 @@
                 tokenomicsP3: "A small transaction tax is applied to all $WAP token trades. This tax is strategically distributed to fund the \"Powerball Welfare Checks\" Lottery, ensuring a sustainable reward system for active holders. This mechanism directly pumps the bags of the community without relying on external funding or inflationary measures. Pure genius.",
                 tokenomicsLi1: "**Total Supply:** 1,000,000,000 $WAP (Fixed, like our diamond hands)",
                 tokenomicsLi2: "**Transaction Fee:** A tiny percentage on buys and sells (for the greater good of the bag).",
-                tokenomicsLi3: "**Reward Pool:** A portion of fees directly funds hourly Solana \"Welfare Checks.\" (Free SOL, ser!)",
+                tokenomicsLi3: "**Reward Pool:** A portion of fees directly funds daily Solana \"Welfare Checks.\" (Free SOL, ser!)",
                 tokenomicsLi4: "**Liquidity Pool:** Another portion beefs up liquidity and stability (No more nasty slippage).",
-                lotteryTitle: "The $WAP \"Welfare Checks\" Lottery (Wen Lambo?)",
-                lotteryP1: "A core feature of the $WAP ecosystem is the innovative \"Welfare Checks\" Lottery. This system is designed to regularly reward active token holders with Solana, fostering consistent engagement and providing tangible benefits. It's like winning the lottery, but hourly.",
-                lotteryP2: "Every hour, **10 random $WAP holders** are selected to receive a \"Welfare Check\" paid directly in Solana. The funds for these checks are accumulated from the transaction fees generated within the $WAP ecosystem. This creates a self-sustaining reward loop that incentivizes holding and trading $WAP tokens. Get ready for those notifications.",
+                lotteryTitle: "The $WAP \"Powerball Welfare Checks\" Venture (Wen Lambo?)",
+                lotteryP1: "A core feature of the $WAP ecosystem is the innovative \"Powerball Welfare Checks\" venture. This system is designed to regularly reward active token holders with Solana, fostering consistent engagement and providing tangible benefits. It's like winning the lottery, but daily.",
+                lotteryP2: "Every **24 hours**, **50 random $WAP holders** will be selected by the system to receive a \"Welfare Check\" paid directly in Solana. To qualify for these daily Powerball draws, participants must hold a **minimum of 500,000 $WAP** in their wallet.",
                 lotteryH3: "How it Works (It's Simple, Degens):",
                 lotteryLi1: "**Hold $WAP:** Just hold $WAP tokens in your Solana wallet. Minimum holding requirements for eligibility will be announced, so stack those bags.",
-                lotteryLi2: "**Trade $WAP:** Transaction fees from buying and selling $WAP contribute to the prize pool. Every trade fuels the next win.",
-                lotteryLi3: "**Hourly Drawings:** Every 60 minutes, our based smart contract randomly selects 10 eligible wallet addresses. Pure randomness, pure gains.",
+                lotteryLi2: "**Transaction Tax:** Transaction fees from buying and selling $WAP contribute to the prize pool. Every trade fuels the next win.",
+                lotteryLi3: "**Daily Draws:** Every 24 hours, 50 eligible wallet addresses are randomly selected. Pure randomness, pure gains.",
                 lotteryLi4: "**Solana Rewards:** The selected holders instantly receive their Solana \"Welfare Check\" directly to their wallet. Instant gratification, anon.",
-                lotteryP3: "This lottery system adds an element of pure hype and continuous reward, distinguishing $WAP as more than just a standard memecoin. It's a lifestyle.",
+                lotteryP3: "This Powerball venture adds an element of pure hype and continuous reward, distinguishing $WAP as more than just a standard memecoin. It's a lifestyle.",
                 howToBuyTitle: "How to Buy $WAP Tokens: A Step-by-Step Guide (Ape In Now!)",
                 howToBuyP1: "Acquiring $WAP tokens is a straightforward process. Follow these steps to set up your Solana wallet and join the Degen States Welfare Assistance Program. Don't fade this, anon.",
                 howToBuyH3a: "Step 1: Set Up a Solana-Compatible Wallet (Get a Wallet, Ser)",
@@ -615,7 +615,7 @@
                 roadmapLi2: "Initial Liquidity Provision & Locking (Rug-proof, ser)",
                 roadmapLi3: "Website Launch (WAP.gov - Fresh UI)",
                 roadmapLi4: "Community Building (Telegram, Discord, X/Twitter - Degens unite!)",
-                roadmapLi5: "Introduction of \"Welfare Checks\" Lottery (Free SOL, hourly!)",
+                roadmapLi5: "Introduction of \"Welfare Checks\" Lottery (Free SOL, daily!)",
                 roadmapH3b: "Phase 2: Growth & Expansion (Current Grind - LFG!)",
                 roadmapLi6: "Strategic Marketing Campaigns & Influencer Partnerships (Getting that mainstream alpha)",
                 roadmapLi7: "Community Contests & Engagement Events (More freebies and good times)",
@@ -672,8 +672,14 @@
 
         // Function to update the Powerball Tracker value
         async function updatePowerballTracker() {
+            const contractPlaceholder = "0x...[Insert $WAP Smart Contract Address Here]...";
             const tokenAddress = "YOUR_WAP_TOKEN_CONTRACT_ADDRESS"; // <<< IMPORTANT: Replace with your actual $WAP token contract address
-            const chainId = "solana"; // Assuming Solana blockchain
+
+            const trackerElement = document.getElementById('powerball-tracker-value');
+            if (tokenAddress === "YOUR_WAP_TOKEN_CONTRACT_ADDRESS") {
+                trackerElement.textContent = `$0.00 SOL`;
+                return;
+            }
 
             // Placeholder for actual Dexscreener API call
             // In a real application, you'd fetch data like this:
@@ -681,11 +687,9 @@
             try {
                 const response = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`);
                 const data = await response.json();
-                // Assuming the API returns a structure like { pairs: [{ volume: { h24: ... } }] }
-                const currentTotalVolume = data.pairs[0].volume.h24; // Or h1 for hourly volume if available
+                const currentTotalVolume = data.pairs[0].volume.h24; 
             } catch (error) {
                 console.error("Error fetching Dexscreener data:", error);
-                // Fallback to simulated volume on error
                 const minVolume = 100000;
                 const maxVolume = 1000000;
                 const currentTotalVolume = Math.random() * (maxVolume - minVolume) + minVolume;
@@ -698,7 +702,6 @@
             const currentTotalVolume = Math.random() * (maxVolume - minVolume) + minVolume;
             // --- END SIMULATED VOLUME ---
 
-
             const taxRate = 0.03; // 3%
             const holdersPercentage = 0.90; // 90% of the tax goes to holders
             const numberOfWinners = 50;
@@ -707,7 +710,6 @@
             const amountForHolders = totalTaxCollected * holdersPercentage;
             const rewardPerWinner = amountForHolders / numberOfWinners;
 
-            const trackerElement = document.getElementById('powerball-tracker-value');
             if (trackerElement) {
                 trackerElement.textContent = `$${rewardPerWinner.toFixed(2)} SOL`;
             }
@@ -735,7 +737,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             updateContent();
             updatePowerballTracker();
-            // Update the tracker every hour (3600000 milliseconds)
+            // Update the tracker every 24 hours (86400000 milliseconds)
             // For demo purposes, updating every 10 seconds (10000 milliseconds)
             setInterval(updatePowerballTracker, 10000);
         });
