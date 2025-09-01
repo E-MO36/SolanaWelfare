@@ -219,11 +219,11 @@
                 </div>
                 
                 <!-- Submission Text & Socials -->
-                <div class="md:w-2/3 w-full flex flex-col md:items-start text-primary-blue md:pl-8">
-                    <p class="text-xl font-semibold mb-4 text-left">Come submit your own WAP artwork!</p>
-                    <p class="text-sm text-left mb-6">We're building a vibrant community, and your creative contributions are a huge part of that. Share your memes, art, and designs on our social channels to be featured here.</p>
-                    <h2 class="text-2xl font-bold mb-4 text-left" data-key="socialMediaTitle">Follow Us on Social Media</h2>
-                    <div class="flex flex-col items-start space-y-2 text-lg">
+                <div class="md:w-2/3 w-full flex flex-col md:items-start md:pl-8 text-primary-blue">
+                    <p class="text-2xl font-bold mb-4 text-left drop-shadow-lg" data-key="submitArtwork">Come submit your own WAP artwork!</p>
+                    <p class="text-lg text-left mb-6 font-semibold" data-key="artworkDesc">We're building a vibrant community, and your creative contributions are a huge part of that. Share your memes, art, and designs on our social channels to be featured here.</p>
+                    <h2 class="text-3xl font-bold mb-4 text-left drop-shadow-lg" data-key="socialMediaTitle">Follow Us on Social Media</h2>
+                    <div class="flex flex-col items-start space-y-3 text-xl font-bold">
                         <div class="mb-2 md:mb-0">
                             <a href="https://t.me/+rO3Citn46Xk3YWQx" target="_blank" class="hover:underline flex items-center text-primary-blue">
                                 <span data-key="socialTelegram">Telegram</span>
@@ -533,7 +533,7 @@
                 roadmapLi3: "Website Launch (WAP.gov)",
                 roadmapLi4: "Community Building (Telegram, Discord, X/Twitter)",
                 roadmapLi5: "Introduction of \"Welfare Checks\" Lottery",
-                roadmapH3b: "Phase 2: Growth & Expansion (Current Focus)",
+                roadmapH3b: "Phase 2: Growth & Expansion (Current Focus)s",
                 roadmapLi6: "Strategic Marketing Campaigns & Influencer Partnerships",
                 roadmapLi7: "Community Contests & Engagement Events",
                 roadmapLi8: "Partnerships with Solana ecosystem projects",
@@ -557,7 +557,7 @@
                 socialTelegram: "Telegram",
                 socialX: "X (Twitter)",
                 socialDexScreener: "Dex Screener (Coming Soon)",
-                communityLi4: "**Reddit:** <a href=\"https://reddit.com/r/WAPcommunity\" class=\"text-blue-600 hover:underline\" target=\"_blank\">reddit.com/r/WAPcommunity</a> - For longer discussions and content sharing.",
+                communityLi4: "**Reddit:** <a href=\"https://reddit.com/r/WAPcommunity\" class=\"text-blue-600 hover:underline\" target=\"_blank\">reddit.com/r/WAPcommunity</a> - For longer discussions and content sharing.</li>",
                 communityP2: "Our community moderators are available to answer your questions and provide assistance. Remember to always be cautious of scams and only follow links from our official channels.",
                 contractTitle: "Official Contract Address",
                 contractDesc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code>",
@@ -600,7 +600,7 @@
                 card7Title: "Official Contract Address (Don't Get Rekt)",
                 card7Desc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code> (Verify this, anon. Don't get rekt by fake contracts.)",
                 card8Title: "Disclaimer (NFA. DYOR. Seriously.)",
-                card8Desc: "Crypto is wild. Prices go up, prices go down. Do your own research before aping into the $WAP program. Not financial advice.",
+                card8Desc: "Crypto is wild. Prices go up, prices go down. Do your own research before aping into the $WAP program. This is not financial advice. We're just here for the vibes and the gains. You could lose it all. But also, WAGMI.",
                 aboutTitle: "About the $WAP - Welfare Assistance Program (Based AF)",
                 aboutP1: "The Degen States Welfare Assistance Program ($WAP) is a groundbreaking initiative designed to bring a new form of community-driven support to its participants. Operating on the principles of decentralization, $WAP aims to foster a vibrant ecosystem where engagement and participation are directly rewarded. We're building different.",
                 aboutP2: "Our mission is to create a transparent and equitable system where financial assistance, alpha leaks, and community pumps go hand-in-hand. We believe in empowering our degens through innovative tokenomics and a commitment to shared prosperity. While this is a memecoin for pure vibes, its underlying structure is built to encourage active participation and reward loyal diamond hands. WAGMI.",
@@ -701,12 +701,11 @@
             document.querySelectorAll('[data-key]').forEach(element => {
                 const key = element.getAttribute('data-key');
                 if (translations[currentLang] && translations[currentLang][key]) {
-                    // Check if the key corresponds to a list item that contains bolding or a link
                     const isListItem = key.startsWith('aboutLi') || key.startsWith('tokenomicsLi') || key.startsWith('roadmapLi') || key.startsWith('howToBuyLi') || key.startsWith('communityLi');
-                    // Check if the key corresponds to a card description that may have a code block
                     const isCardDesc = key === 'card7Desc' || key === 'contractDesc';
+                    const isSocialText = key === 'submitArtwork' || key === 'artworkDesc' || key === 'socialMediaTitle' || key.startsWith('social');
 
-                    if (isListItem || isCardDesc) {
+                    if (isListItem || isCardDesc || isSocialText) {
                         element.innerHTML = translations[currentLang][key];
                     } else {
                         element.textContent = translations[currentLang][key];
@@ -725,10 +724,9 @@
             });
         });
 
-        // Function to update the Powerball Tracker value
         async function updatePowerballTracker() {
             const contractPlaceholder = "0x...[Insert $WAP Smart Contract Address Here]...";
-            const tokenAddress = "YOUR_WAP_TOKEN_CONTRACT_ADDRESS"; // <<< IMPORTANT: Replace with your actual $WAP token contract address
+            const tokenAddress = "YOUR_WAP_TOKEN_CONTRACT_ADDRESS";
 
             const trackerElement = document.getElementById('powerball-tracker-value');
             if (tokenAddress === "YOUR_WAP_TOKEN_CONTRACT_ADDRESS") {
@@ -736,14 +734,12 @@
                 return;
             }
 
-            // --- SIMULATED VOLUME FOR DEMONSTRATION ---
             const minVolume = 100000;
             const maxVolume = 1000000;
             const currentTotalVolume = Math.random() * (maxVolume - minVolume) + minVolume;
-            // --- END SIMULATED VOLUME ---
 
-            const taxRate = 0.04; // 4%
-            const holdersPercentage = 0.90; // 90% of the tax goes to holders
+            const taxRate = 0.04;
+            const holdersPercentage = 0.90;
             const numberOfWinners = 50;
 
             const totalTaxCollected = currentTotalVolume * taxRate;
@@ -755,35 +751,22 @@
             }
         }
 
-        // --- ARTWORK SLIDESHOW LOGIC ---
         let currentImageIndex = 0;
 
         function updateSlideshow() {
-            // Get all images with the 'slideshow-image' class
             const images = document.querySelectorAll('.slideshow-image');
-            
-            // First, hide all images by removing the 'active' class
             images.forEach(img => img.classList.remove('active'));
-            
-            // Then, show the current image by adding the 'active' class
             images[currentImageIndex].classList.add('active');
-            
-            // Increment the index for the next image, and use the modulo operator (%)
-            // to loop back to 0 when the index reaches the number of images.
             currentImageIndex = (currentImageIndex + 1) % images.length;
         }
 
-        // Initialize content and tracker on page load
         document.addEventListener('DOMContentLoaded', () => {
             updateContent();
             updatePowerballTracker();
-            // Update the tracker every 24 hours (86400000 milliseconds)
-            // For demo purposes, updating every 10 seconds (10000 milliseconds)
             setInterval(updatePowerballTracker, 10000);
             
-            // Start the slideshow by calling the function and then setting an interval
-            updateSlideshow(); // Show the first image immediately
-            setInterval(updateSlideshow, 2000); // Change image every 2 seconds
+            updateSlideshow();
+            setInterval(updateSlideshow, 2000);
         });
     </script>
 
