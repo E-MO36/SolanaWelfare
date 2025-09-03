@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Degen States Welfare Assistance Program - Official Portal</title>
+    <title data-key="title">Degen States Welfare Assistance Program - Official Portal</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for an official look -->
@@ -197,11 +197,19 @@
             </div>
         </section>
 
-        <!-- Powerball Tracker Section -->
+        <!-- Contract Address Section -->
         <section class="bg-cover bg-center text-white py-8 px-4 text-center rounded-lg shadow-lg mb-12" style="background-image: url('https://github.com/E-MO36/miles-for-mango/blob/main/PowerballBackground.png?raw=true');">
-            <h2 class="text-3xl font-bold mb-4" data-key="trackerTitle">Daily Powerball Tracker</h2>
-            <p class="text-6xl font-extrabold mb-2 text-yellow-300" id="powerball-tracker-value">$0.00 SOL</p>
-            <p class="text-lg font-medium" data-key="trackerInfo">Current estimated reward per winner, based on 4% transaction tax (90% to holders) and 50 winners per 24 hours.</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 drop-shadow-lg" data-key="trackerTitle">Official Contract Address</h2>
+            <div class="flex flex-col items-center justify-center">
+                <code id="contract-address-display" class="text-xl md:text-3xl font-extrabold text-yellow-300 break-all px-4 py-2 bg-black bg-opacity-30 rounded-lg shadow-md mb-4">WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ</code>
+                <button id="copy-button" class="mt-2 px-6 py-3 bg-yellow-300 text-primary-blue font-bold rounded-full shadow-md hover:bg-yellow-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7v4a1 1 0 001 1h4a1 1 0 001-1V7a1 1 0 00-1-1H9a1 1 0 00-1 1zm8 10v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2a1 1 0 011-1h2.586a1 1 0 00.707-.293l1.414-1.414a1 1 0 011.414 0l1.414 1.414a1 1 0 00.707.293H15a1 1 0 011 1z" />
+                    </svg>
+                    <span id="copy-text" data-key="copyText">Copy Address</span>
+                </button>
+                <div id="copy-message" class="text-green-300 mt-2 hidden" data-key="copiedText">Copied!</div>
+            </div>
         </section>
 
         <!-- Combined Artwork and Social Media Section -->
@@ -235,9 +243,9 @@
                             </a>
                         </div>
                         <div>
-                            <span class="flex items-center text-primary-blue">
-                                <span data-key="socialDexScreener">Dex Screener (Coming Soon)</span>
-                            </span>
+                            <a href="https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi" target="_blank" class="hover:underline flex items-center text-primary-blue">
+                                <span data-key="socialDexScreener">Dex Screener</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -285,7 +293,7 @@
             <!-- Card 7: Official Contract Address -->
             <div class="info-card p-6" id="contract-address">
                 <h3 class="text-xl font-semibold mb-2" data-key="card7Title">Official Contract Address</h3>
-                <p class="text-gray-700 break-all" data-key="contractDesc"><code>0x...[Insert $WAP Smart Contract Address Here]...</code></p>
+                <p class="text-gray-700 break-all" data-key="contractDesc"><code>WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ</code></p>
             </div>
 
             <!-- Card 8: Disclaimer -->
@@ -353,7 +361,7 @@
             <p class="text-lg leading-relaxed mb-4" data-key="howToBuyP4">You'll need Solana (SOL) to purchase $WAP tokens and cover transaction fees. You can buy SOL from major cryptocurrency exchanges such as Coinbase, Binance, Kraken, or FTX (if available in your region). Once purchased, withdraw your SOL to your Solana-compatible wallet address.</p>
 
             <h3 class="text-2xl font-semibold mb-4" data-key="howToBuyH3c">Step 3: Connect to a Decentralized Exchange (DEX)</h3>
-            <p class="text-lg leading-relaxed mb-4" data-key="howToBuyP5">Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). Popular options include Raydium or Jupiter Aggregator.</p>
+            <p class="text-lg leading-relaxed mb-4" data-key="howToBuyP5">Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). Popular options include <a href="https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi" target="_blank" class="text-blue-600 hover:underline">Raydium</a> or <a href="https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi" target="_blank" class="text-blue-600 hover:underline">Jupiter Aggregator</a>. You can track our price on <a href="https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi" target="_blank" class="text-blue-600 hover:underline">Dexscreener</a>.</p>
             <ol class="list-decimal pl-8 text-lg leading-relaxed space-y-2">
                 <li data-key="howToBuyLi3">Go to your preferred DEX website.</li>
                 <li data-key="howToBuyLi4">Connect your Solana wallet (e.g., Phantom) to the DEX.</li>
@@ -363,7 +371,7 @@
             <h3 class="text-2xl font-semibold mb-4" data-key="howToBuyH3d">Step 4: Swap SOL for $WAP</h3>
             <ol class="list-decimal pl-8 text-lg leading-relaxed space-y-2">
                 <li data-key="howToBuyLi6">In the "Swap" interface, select SOL as the token you want to trade FROM.</li>
-                <li data-key="howToBuyLi7">Enter the $WAP contract address (which will be officially announced on our channels and listed in the 'Official Contract Address' section on this page) into the "TO" field to find $WAP.</li>
+                <li data-key="howToBuyLi7">Enter the $WAP contract address (<code class="break-all">WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ</code>) into the "TO" field to find $WAP.</li>
                 <li data-key="howToBuyLi8">Enter the amount of SOL you wish to swap for $WAP. The DEX will show you the approximate amount of $WAP you will receive.</li>
                 <li data-key="howToBuyLi9">Review the transaction details (including slippage tolerance, typically set to auto or a small percentage like 0.5-1%).</li>
                 <li data-key="howToBuyLi10">Confirm the swap in your wallet.</li>
@@ -413,7 +421,7 @@
                 <li data-key="communityLi1">**Telegram:** <a href="https://t.me/+rO3Citn46Xk3YWQx" class="text-blue-600 hover:underline" target="_blank">t.me/+rO3Citn46Xk3YWQx</a> - For real-time chat and announcements.</li>
                 <li data-key="communityLi2">**Discord:** <a href="https://discord.gg/WAPofficial" class="text-blue-600 hover:underline" target="_blank">discord.gg/WAPofficial</a> - For in-depth discussions, support, and special events.</li>
                 <li data-key="communityLi3">**X (formerly Twitter):** <a href="https://x.com/WeAssistprogram" class="text-blue-600 hover:underline" target="_blank">@WeAssistprogram</a> - For quick updates, news, and community polls.</li>
-                <li data-key="communityLi4">**Reddit:** <a href="https://reddit.com/r/WAPcommunity" class="text-blue-600 hover:underline" target="_blank">reddit.com/r/WAPcommunity</a> - For longer discussions and content sharing.</li>
+                <li data-key="communityLi4">**Dex Screener:** <a href="https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi" class="text-blue-600 hover:underline" target="_blank">Our Chart</a> - Track the price action here.</li>
             </ul>
             <p class="text-lg leading-relaxed mt-4" data-key="communityP2">Our community moderators are available to answer your questions and provide assistance. Remember to always be cautious of scams and only follow links from our official channels.</p>
         </section>
@@ -421,8 +429,8 @@
         <!-- Official Contract Address and Disclaimer remain as static cards -->
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="info-card p-6" id="contract-address">
-                <h3 class="text-xl font-semibold mb-2" data-key="contractTitle">Official Contract Address</h3>
-                <p class="text-gray-700 break-all" data-key="contractDesc"><code>0x...[Insert $WAP Smart Contract Address Here]...</code></p>
+                <h3 class="text-xl font-semibold mb-2" data-key="card7Title">Official Contract Address</h3>
+                <p class="text-gray-700 break-all" data-key="contractDesc"><code>WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ</code></p>
             </div>
 
             <div class="info-card p-6" id="disclaimer">
@@ -449,7 +457,7 @@
                 searchPlaceholder: "Search WAP.gov...",
                 programName: "Degen States Welfare Assistance Program",
                 officialPortal: "WAP.gov - Official Portal",
-                navAbout: "About $WAP",
+                navAbout: "$WAP",
                 navTokenomics: "Tokenomics",
                 navHowToBuy: "How to Buy",
                 navRoadmap: "Roadmap",
@@ -468,7 +476,7 @@
                 socialMediaTitle: "Follow Us on Social Media",
                 socialTelegram: "Telegram",
                 socialX: "X (Twitter)",
-                socialDexScreener: "Dex Screener (Coming Soon)",
+                socialDexScreener: "Dex Screener",
                 card1Title: "About $WAP",
                 card1Desc: "Learn about the mission, vision, and community values of the Welfare Assistance Program.",
                 card2Title: "Tokenomics",
@@ -482,7 +490,7 @@
                 card6Title: "Community & Support",
                 card6Desc: "Join our official channels and connect with the $WAP Welfare Assistance community.",
                 card7Title: "Official Contract Address",
-                card7Desc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code>",
+                contractDesc: "<code>WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ</code>",
                 disclaimerTitle: "Disclaimer",
                 disclaimerDesc: "Cryptocurrency investments are volatile. DYOR before participating in the $WAP program.",
                 aboutTitle: "About the $WAP - Welfare Assistance Program",
@@ -522,13 +530,13 @@
                 howToBuyH3b: "Step 2: Fund Your Wallet with Solana (SOL)",
                 howToBuyP4: "You'll need Solana (SOL) to purchase $WAP tokens and cover transaction fees. You can buy SOL from major cryptocurrency exchanges such as Coinbase, Binance, Kraken, or FTX (if available in your region). Once purchased, withdraw your SOL to your Solana-compatible wallet address.",
                 howToBuyH3c: "Step 3: Connect to a Decentralized Exchange (DEX)",
-                howToBuyP5: "Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). Popular options include Raydium or Jupiter Aggregator.",
+                howToBuyP5: "Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). Popular options include Raydium or Jupiter Aggregator. You can track our price on Dexscreener.",
                 howToBuyLi3: "Go to your preferred DEX website.",
                 howToBuyLi4: "Connect your Solana wallet (e.g., Phantom) to the DEX.",
                 howToBuyLi5: "Locate the trading interface or \"Swap\" section.",
                 howToBuyH3d: "Step 4: Swap SOL for $WAP",
                 howToBuyLi6: "In the \"Swap\" interface, select SOL as the token you want to trade FROM.",
-                howToBuyLi7: "Enter the $WAP contract address (which will be officially announced on our channels and listed in the 'Official Contract Address' section on this page) into the \"TO\" field to find $WAP.",
+                howToBuyLi7: "Enter the $WAP contract address (WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ) into the \"TO\" field to find $WAP.",
                 howToBuyLi8: "Enter the amount of SOL you wish to swap for $WAP. The DEX will show you the approximate amount of $WAP you will receive.",
                 howToBuyLi9: "Review the transaction details (including slippage tolerance, typically set to auto or a small percentage like 0.5-1%).",
                 howToBuyLi10: "Confirm the swap in your wallet.",
@@ -561,12 +569,11 @@
                 communityLi1: "**Telegram:** <a href=\"https://t.me/+rO3Citn46Xk3YWQx\" class=\"text-blue-600 hover:underline\" target=\"_blank\">t.me/+rO3Citn46Xk3YWQx</a> - For real-time chat and announcements.",
                 communityLi2: "**Discord:** <a href=\"https://discord.gg/WAPofficial\" class=\"text-blue-600 hover:underline\" target=\"_blank\">discord.gg/WAPofficial</a> - For in-depth discussions, support, and special events.",
                 communityLi3: "**X (formerly Twitter):** <a href=\"https://x.com/WeAssistprogram\" class=\"text-blue-600 hover:underline\" target=\"_blank\">@WeAssistprogram</a> - For quick updates, news, and community polls.",
-                communityLi4: "**Reddit:** <a href=\"https://reddit.com/r/WAPcommunity\" class=\"text-blue-600 hover:underline\" target=\"_blank\">reddit.com/r/WAPcommunity</a> - For longer discussions and content sharing.",
+                communityLi4: "**Dex Screener:** <a href=\"https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi\" class=\"text-blue-600 hover:underline\" target=\"_blank\">Our Chart</a> - Track the price action here.",
                 communityP2: "Our community moderators are available to answer your questions and provide assistance. Remember to always be cautious of scams and only follow links from our official channels.",
-                contractTitle: "Official Contract Address",
-                contractDesc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code>",
-                trackerTitle: "Daily Powerball Tracker",
-                trackerInfo: "Current estimated reward per winner, based on 4% transaction tax (90% to holders) and 50 winners per 24 hours.",
+                trackerTitle: "Official Contract Address",
+                copyText: "Copy Address",
+                copiedText: "Copied!",
                 footerCopyright: "&copy; 2025 Degen States Welfare Assistance Program. All rights reserved.",
                 footerDisclaimer: "This is a memecoin for entertainment purposes only and is not affiliated with any government entity.",
                 footerPrivacy: "Privacy Policy",
@@ -596,7 +603,7 @@
                 socialMediaTitle: "Síguenos en Redes Sociales",
                 socialTelegram: "Telegram",
                 socialX: "X (Twitter)",
-                socialDexScreener: "Dex Screener (Próximamente)",
+                socialDexScreener: "Dex Screener",
                 card1Title: "Acerca de $WAP",
                 card1Desc: "Conozca la misión, visión y valores comunitarios del Programa de Asistencia Social.",
                 card2Title: "Tokenomics",
@@ -610,7 +617,7 @@
                 card6Title: "Comunidad y Soporte",
                 card6Desc: "Únase a nuestros canales oficiales y conéctese con la comunidad de Asistencia Social $WAP.",
                 card7Title: "Dirección del Contrato Oficial",
-                card7Desc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code>",
+                contractDesc: "<code>WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ</code>",
                 disclaimerTitle: "Descargo de Responsabilidad",
                 disclaimerDesc: "Las inversiones en criptomonedas son volátiles. DYOR antes de participar en el programa $WAP.",
                 aboutTitle: "Acerca de $WAP - Programa de Asistencia Social",
@@ -650,13 +657,13 @@
                 howToBuyH3b: "Paso 2: Financie su Billetera con Solana (SOL)",
                 howToBuyP4: "Necesitará Solana (SOL) para comprar tokens $WAP y cubrir las tarifas de transacción. Puede comprar SOL en los principales exchanges de criptomonedas como Coinbase, Binance, Kraken, o FTX (si están disponibles en su región). Una vez comprada, retire su SOL a la dirección de su billetera compatible con Solana.",
                 howToBuyH3c: "Paso 3: Conecte a un Exchange Descentralizado (DEX)",
-                howToBuyP5: "La mayoría de las operaciones de $WAP se realizarán en Exchanges Descentralizados (DEXs) basados en Solana. Las opciones populares incluyen Raydium o Jupiter Aggregator.",
+                howToBuyP5: "La mayoría de las operaciones de $WAP se realizarán en Exchanges Descentralizados (DEXs) basados en Solana. Populares opciones incluyen Raydium o Jupiter Aggregator. Puede rastrear nuestro precio en Dexscreener.",
                 howToBuyLi3: "Vaya al sitio web de su DEX preferido.",
                 howToBuyLi4: "Conecte su billetera de Solana (por ejemplo, Phantom) al DEX.",
                 howToBuyLi5: "Localice la interfaz de trading o la sección de \"Swap\".",
                 howToBuyH3d: "Paso 4: Cambie SOL por $WAP",
                 howToBuyLi6: "En la interfaz de \"Swap\", seleccione SOL como el token desde el que desea operar.",
-                howToBuyLi7: "Introduzca la dirección del contrato de $WAP (que se anunciará oficialmente en nuestros canales y se listará en la sección 'Dirección del Contrato Oficial' de esta página) en el campo \"A\" para encontrar $WAP.",
+                howToBuyLi7: "Introduzca la dirección del contrato de $WAP (WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ) en el campo \"A\" para encontrar $WAP.",
                 howToBuyLi8: "Introduzca la cantidad de SOL que desea cambiar por $WAP. El DEX le mostrará la cantidad aproximada de $WAP que recibirá.",
                 howToBuyLi9: "Revise los detalles de la transacción (incluyendo la tolerancia al deslizamiento, que generalmente se establece en automático o un pequeño porcentaje como 0.5-1%).",
                 howToBuyLi10: "Confirme el cambio en su billetera.",
@@ -689,12 +696,11 @@
                 communityLi1: "**Telegram:** <a href=\"https://t.me/+rO3Citn46Xk3YWQx\" class=\"text-blue-600 hover:underline\" target=\"_blank\">t.me/+rO3Citn46Xk3YWQx</a> - Para chat y anuncios en tiempo real.",
                 communityLi2: "**Discord:** <a href=\"https://discord.gg/WAPofficial\" class=\"text-blue-600 hover:underline\" target=\"_blank\">discord.gg/WAPofficial</a> - Para discusiones en profundidad, soporte y eventos especiales.",
                 communityLi3: "**X (antes Twitter):** <a href=\"https://x.com/WeAssistprogram\" class=\"text-blue-600 hover:underline\" target=\"_blank\">@WeAssistprogram</a> - Para actualizaciones rápidas, noticias y encuestas de la comunidad.",
-                communityLi4: "**Reddit:** <a href=\"https://reddit.com/r/WAPcommunity\" class=\"text-blue-600 hover:underline\" target=\"_blank\">reddit.com/r/WAPcommunity</a> - Para discusiones más largas y compartir contenido.",
+                communityLi4: "**Dex Screener:** <a href=\"https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi\" class=\"text-blue-600 hover:underline\" target=\"_blank\">Nuestro Gráfico</a> - Rastrea la acción del precio aquí.",
                 communityP2: "Nuestros moderadores de la comunidad están disponibles para responder a sus preguntas y proporcionar asistencia. Recuerde siempre ser cauteloso con las estafas y solo siga enlaces de nuestros canales oficiales.",
-                contractTitle: "Dirección del Contrato Oficial",
-                contractDesc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code>",
-                trackerTitle: "Rastreador Diario de Powerball",
-                trackerInfo: "Recompensa estimada actual por ganador, basada en un impuesto de transacción del 4% (90% para los titulares) y 50 ganadores cada 24 horas.",
+                trackerTitle: "Dirección del Contrato Oficial",
+                copyText: "Copiar Dirección",
+                copiedText: "¡Copiado!",
                 footerCopyright: "&copy; 2025 Programa de Asistencia Social de los Estados Degen. Todos los derechos reservados.",
                 footerDisclaimer: "Esta es una memecoin solo con fines de entretenimiento y no está afiliada a ninguna entidad gubernamental.",
                 footerPrivacy: "Política de Privacidad",
@@ -724,7 +730,7 @@
                 socialMediaTitle: "Follow the Alpha (Socials)",
                 socialTelegram: "Telegram (Alpha Chat)",
                 socialX: "X (Twitter) (Degens Only)",
-                socialDexScreener: "Dex Screener (Charts Coming Soon - Wen Green?)",
+                socialDexScreener: "Dex Screener (Charts Inbound)",
                 card1Title: "About $WAP (Based)",
                 card1Desc: "Get the lowdown on the mission, vision, and community vibes of this Welfare Assistance Program. It's gonna be epic.",
                 card2Title: "Tokenomics (To the Moon!)",
@@ -738,7 +744,7 @@
                 card6Title: "Community & Support (Degens Assemble!)",
                 card6Desc: "Join our official channels, shill your bags, and connect with the $WAP Degen Army. We're all gonna make it.",
                 card7Title: "Official Contract Address (Don't Get Rekt)",
-                card7Desc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code> (Verify this, anon. Don't get rekt by fake contracts.)",
+                contractDesc: "<code>WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ</code>",
                 disclaimerTitle: "Disclaimer (NFA. DYOR. Seriously.)",
                 disclaimerDesc: "Cryptocurrency investments are volatile. Prices go up, prices go down. Do your own research before aping into the $WAP program. This is not financial advice. We're just here for the vibes and the gains. You could lose it all. But also, WAGMI.",
                 aboutTitle: "About the $WAP - Welfare Assistance Program (Based AF)",
@@ -757,7 +763,7 @@
                 tokenomicsP3: "A small transaction tax is applied to all $WAP token trades. This tax is strategically distributed to fund the \"Powerball Welfare Checks\" Lottery, ensuring a sustainable reward system for active holders. This mechanism directly pumps the bags of the community without relying on external funding or inflationary measures. Pure genius.",
                 tokenomicsLi1: "**Total Supply:** 1,000,000,000 $WAP (Fixed, like our diamond hands)",
                 tokenomicsLi2: "**Transaction Fee:** 4% on buys and sells (for the greater good of the bag).",
-                tokenomicsLi3: "**Reward Pool:** A portion of fees directly funds daily Solana \"Welfare Checks.\" (Free SOL, ser!)",
+                tokenomicsLi3: "**Reward Pool:** A portion of fees directly funds daily Solana \"Welfare Checks.\" (Free SOL, daily!)",
                 tokenomicsLi4: "**Dev/Marketing:** 10% of tax for project development and promotion.",
                 lotteryTitle: "The $WAP \"Powerball Welfare Checks\" Venture (Wen Lambo?)",
                 lotteryP1: "A core feature of the $WAP ecosystem is the innovative \"Powerball Welfare Checks\" venture. This system is designed to regularly reward active token holders with Solana, fostering consistent engagement and providing tangible benefits. It's like winning the lottery, but daily.",
@@ -778,13 +784,13 @@
                 howToBuyH3b: "Step 2: Fund Your Wallet with SOL (Get Some Gas)",
                 howToBuyP4: "You'll need Solana (SOL) to purchase $WAP tokens and cover those tiny transaction fees. You can buy SOL from major centralized exchanges like Coinbase, Binance, Kraken, or FTX (if you're still using it, ser). Once purchased, withdraw your SOL to your Solana-compatible wallet address. Always double-check that address!",
                 howToBuyH3c: "Step 3: Connect to a DEX (Where the Magic Happens)",
-                howToBuyP5: "Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). True degens use these. Popular options include Raydium or Jupiter Aggregator.",
+                howToBuyP5: "Most $WAP trading will occur on Solana-based Decentralized Exchanges (DEXs). True degens use these. Popular options include <a href=\"https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi\" target=\"_blank\" class=\"text-blue-600 hover:underline\">Raydium</a> or <a href=\"https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi\" target=\"_blank\" class=\"text-blue-600 hover:underline\">Jupiter Aggregator</a>. Track us on <a href=\"https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi\" target=\"_blank\" class=\"text-blue-600 hover:underline\">Dexscreener</a>.",
                 howToBuyLi3: "Go to your preferred DEX website (bookmark it, anon, avoid phishing).",
                 howToBuyLi4: "Connect your Solana wallet (e.g., Phantom) to the DEX. Authorize the connection.",
                 howToBuyLi5: "Locate the trading interface or \"Swap\" section. It's usually obvious.",
                 howToBuyH3d: "Step 4: Swap SOL for $WAP (Send It!)",
                 howToBuyLi6: "In the \"Swap\" interface, select SOL as the token you want to trade FROM. Easy.",
-                howToBuyLi7: "Enter the $WAP contract address (which will be officially announced on our channels and listed in the 'Official Contract Address' section on this page) into the \"TO\" field to find $WAP. VERIFY THE CONTRACT ADDRESS! Don't get rugged.",
+                howToBuyLi7: "Enter the $WAP contract address (WAPXuEkxDdpYZzMeKfjEhFgSWkkURSa7GJBupk925gJ) into the \"TO\" field to find $WAP. VERIFY THE CONTRACT ADDRESS! Don't get rugged.",
                 howToBuyLi8: "Enter the amount of SOL you wish to swap for $WAP. The DEX will show you the approximate amount of $WAP you will receive. Max it out, anon.",
                 howToBuyLi9: "Review the transaction details (including slippage tolerance, typically set to auto or a small percentage like 0.5-1%). Adjust slippage if needed for fast-moving markets.",
                 howToBuyLi10: "Confirm the swap in your wallet. Sign the transaction. BOOM! You're in.",
@@ -817,12 +823,11 @@
                 communityLi1: "**Telegram:** <a href=\"https://t.me/+rO3Citn46Xk3YWQx\" class=\"text-blue-600 hover:underline\" target=\"_blank\">t.me/+rO3Citn46Xk3YWQx</a> - For real-time alpha calls and based chats. Get in there!",
                 communityLi2: "**Discord:** <a href=\"https://discord.gg/WAPofficial\" class=\"text-blue-600 hover:underline\" target=\"_blank\">discord.gg/WAPofficial</a> - For in-depth discussions, support, and exclusive events. Don't miss out on the vibes.",
                 communityLi3: "**X (formerly Twitter):** <a href=\"https://x.com/WeAssistprogram\" class=\"text-blue-600 hover:underline\" target=\"_blank\">@WeAssistprogram</a> - For quick updates, breaking news, and community polls. Follow and retweet, anon!",
-                communityLi4: "**Reddit:** <a href=\"https://reddit.com/r/WAPcommunity\" class=\"text-blue-600 hover:underline\" target=\"_blank\">reddit.com/r/WAPcommunity</a> - For longer discussions, meme dumps, and content sharing. Upvote everything!",
+                communityLi4: "**Dex Screener:** <a href=\"https://dexscreener.com/solana/2au3tbhdbdezc5mjgsjamb9ohuwe2o7odm4ptgsnu5pi\" class=\"text-blue-600 hover:underline\" target=\"_blank\">Our Chart</a> - Track the price action here.",
                 communityP2: "Our community mods are always on standby to drop alpha and provide assistance. Remember to always be cautious of scams and only follow links from our official channels. Stay safe out there, anon. DYOR!",
-                contractTitle: "Official Contract Address (Verify, Verify, Verify!)",
-                contractDesc: "<code>0x...[Insert $WAP Smart Contract Address Here]...</code> (Double-check this, anon. Don't get rekt by fake contracts.)",
-                trackerTitle: "Daily Powerball Tracker (Free SOL!)",
-                trackerInfo: "Current estimated reward per winner, based on 4% transaction tax (90% to holders) and 50 winners per 24 hours. Get your passive income, anon.",
+                trackerTitle: "Official Contract Address (Get Your Bags)",
+                copyText: "Copy That Address, Ser",
+                copiedText: "Copied! WAGMI!",
                 footerCopyright: "&copy; 2025 Degen States Welfare Assistance Program. All rights reserved. (We own the memes.)",
                 footerDisclaimer: "This is a memecoin for pure vibes and entertainment purposes only and is not affiliated with any government entity. Don't take it too seriously, anon. Unless you're making bank.",
                 footerPrivacy: "Privacy Policy (We probably know your wallet address, anon)",
@@ -863,32 +868,6 @@
             });
         });
 
-        async function updatePowerballTracker() {
-            const tokenAddress = "YOUR_WAP_TOKEN_CONTRACT_ADDRESS";
-            const trackerElement = document.getElementById('powerball-tracker-value');
-
-            if (tokenAddress === "YOUR_WAP_TOKEN_CONTRACT_ADDRESS") {
-                trackerElement.textContent = `$0.00 SOL`;
-                return;
-            }
-
-            const minVolume = 100000;
-            const maxVolume = 1000000;
-            const currentTotalVolume = Math.random() * (maxVolume - minVolume) + minVolume;
-
-            const taxRate = 0.04;
-            const holdersPercentage = 0.90;
-            const numberOfWinners = 50;
-
-            const totalTaxCollected = currentTotalVolume * taxRate;
-            const amountForHolders = totalTaxCollected * holdersPercentage;
-            const rewardPerWinner = amountForHolders / numberOfWinners;
-
-            if (trackerElement) {
-                trackerElement.textContent = `$${rewardPerWinner.toFixed(2)} SOL`;
-            }
-        }
-
         let currentImageIndex = 0;
 
         function updateSlideshow() {
@@ -900,11 +879,31 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             updateContent();
-            updatePowerballTracker();
-            setInterval(updatePowerballTracker, 10000);
             
             updateSlideshow();
             setInterval(updateSlideshow, 2000);
+
+            const copyButton = document.getElementById('copy-button');
+            const contractAddress = document.getElementById('contract-address-display');
+            const copyMessage = document.getElementById('copy-message');
+
+            copyButton.addEventListener('click', () => {
+                const textToCopy = contractAddress.textContent.trim();
+                const textarea = document.createElement('textarea');
+                textarea.value = textToCopy;
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    copyMessage.classList.remove('hidden');
+                    setTimeout(() => {
+                        copyMessage.classList.add('hidden');
+                    }, 2000);
+                } catch (err) {
+                    console.error('Failed to copy text: ', err);
+                }
+                document.body.removeChild(textarea);
+            });
         });
     </script>
 </body>
